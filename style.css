@@ -5,9 +5,6 @@ body {
     background-color: rgb(224, 224, 224);
 }
 
-.body {
-    margin: 0 auto;
-}
 
 .nav img {
     width: 5%;
@@ -56,16 +53,44 @@ body {
 
 
 .home-me {
-    width: 20%;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
+    width: 5%;
+    margin: 0 auto;
 }
 
-.left-info p {
-border-radius: 25px;
+.body {
+}
+
+.body div {
+
+}
+
+.side-box {
+  border-radius: 25px;
   background: #ffffff;
-  padding: 20px; 
-  width: 200px;
-  height: 150px;
+  width: 100px;
+  height: 500px;
+}
+
+.middle-box {
+    border-radius: 25px;
+    background: #ffffff;
+    width: 500px;
+    height: 500px;
+  }
+
+.body-left{
+    float: left;
+    margin-left: 250px;
+}
+
+.body-right {
+    margin-right: 250px;
+    float: right;
+}
+
+.body-middle{
+    width: 500px;
+   display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
