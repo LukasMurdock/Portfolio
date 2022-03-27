@@ -89,3 +89,23 @@ body {
  .contact-body h3 {
      text-align: center;
  }
+
+ .resume-body li{
+    margin-left: 370px;
+    padding-bottom: 10px;
+    list-style: none;
+ }
+
+ .resume-body a {
+     font-weight: bold;
+     text-decoration: none;
+     color:rgb(55, 37, 216);
+ }
+
+.resume-body hr {
+    margin-right: 430px;
+}
+
+.roles p{
+    padding-bottom: 3px;
+}
