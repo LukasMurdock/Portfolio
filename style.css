@@ -1,22 +1,24 @@
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
-    background-color: rgb(224, 224, 224);
+    background-color: white;
+    
+    
 }
-
 
 .nav img {
     width: 5%;
     height: auto;
     float: left;
-    padding-left: 250px;
+    padding-left: 400px;
     padding-top: 10px;
 }
 
 .nav{
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
     overflow: hidden;
-    background-color: white;
+    background-color: rgb(224, 224, 224);
 }
 
 .nav a { 
@@ -28,7 +30,7 @@ body {
 }
 
 .nav-menu {
-    margin-right: 250px;
+    margin-right: 400px;
     float: right;
 }
 
@@ -52,45 +54,28 @@ body {
 }
 
 
-.home-me {
-    width: 5%;
-    margin: 0 auto;
-}
-
 .body {
+    font-family: 'Segoe UI';
+    font-size: 100%;
 }
 
-.body div {
 
+.headshot {
+    width: 400px;
+    height: 400px;
+    padding-top: 20px;
 }
 
-.side-box {
-  border-radius: 25px;
-  background: #ffffff;
-  width: 100px;
-  height: 500px;
-}
 
-.middle-box {
-    border-radius: 25px;
-    background: #ffffff;
-    width: 500px;
-    height: 500px;
-  }
-
-.body-left{
-    float: left;
-    margin-left: 250px;
+.links img {
+    width: 100px;
+    height: 100px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
-
-.body-right {
-    margin-right: 250px;
-    float: right;
+.links {
+    margin-right: 43px;
 }
-
-.body-middle{
-    width: 500px;
-   display: table;
-    margin-left: auto;
-    margin-right: auto;
-}
+ .links li {
+    display: inline;
+ }
