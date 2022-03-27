@@ -79,3 +79,13 @@ body {
  .links li {
     display: inline;
  }
+
+
+ .contact-body {
+    font-family: 'Segoe UI';
+    text-align: center;
+ }
+
+ .contact-body h3 {
+     text-align: center;
+ }
