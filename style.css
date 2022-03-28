@@ -92,7 +92,7 @@ body {
 
  .resume-body li{
     margin-left: 370px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     list-style: none;
  }
 
@@ -112,7 +112,6 @@ body {
 }
 
 .roles a {
-    font-weight: normal;
     color:black
 }
 
