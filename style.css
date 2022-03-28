@@ -99,13 +99,23 @@ body {
  .resume-body a {
      font-weight: bold;
      text-decoration: none;
-     color:rgb(55, 37, 216);
+     color: rgb(0, 0, 0)
  }
+
 
 .resume-body hr {
     margin-right: 430px;
 }
 
 .roles p{
-    padding-bottom: 3px;
+    margin: 0;
+}
+
+.roles a {
+    font-weight: normal;
+    color:black
+}
+
+.resume-body a:hover {
+    text-decoration: underline;
 }
