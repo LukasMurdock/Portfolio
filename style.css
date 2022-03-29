@@ -7,7 +7,11 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to right, rgb(238, 226, 226) , rgb(255, 252, 245));
+  background-image: linear-gradient(to bottom, rgb(216, 215, 215) , rgb(243, 221, 217));
+}
+
+.a {
+  text-decoration: none;
 }
 
 
@@ -130,6 +134,7 @@ body {
 
 .nav-container {
   text-align: center;
+  margin-left: 33px;
 }
 
 .main-logo {
@@ -289,17 +294,15 @@ body {
 }
 
 .date {
-    padding: 3px 3px;
-    background: #faeaff;
+    background: #c5bdc7;
     display: inline-block;
-    font-weight: 100;
     margin-bottom: 0px;
   
 }
 
 .job-place {
     padding: 3px 3px;
-    background: #edf5fd;
+    background: #bbb6b6;
     display: inline-block;
     margin-bottom: 0px;
 }
@@ -442,3 +445,31 @@ progress {
   }
 
 
+
+  .pics img{
+    width: 270px;
+    height: 270px;
+  }
+
+  .pics {
+    margin-top: 50px;
+    margin-left: auto; 
+  margin-right: auto;
+  }
+
+  .vid {
+    text-align: center;
+  }
+
+  .des {
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  .des {
+    margin-left: 400px;
+}
+
+.des li {
+  list-style: none;
+}
