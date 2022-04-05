@@ -245,8 +245,14 @@ body {
    
  }
 
+.title-divider {
+    width: 400px;
+    padding-bottom :6px;
+    margin-bottom:15px;
+}
+
 .divider {
-    width: 650px;
+  width: 670px;
 }
 
 .underline {
@@ -457,7 +463,6 @@ progress {
   }
 
   .pics {
-    margin-top: 50px;
     margin-left: auto; 
   margin-right: auto;
   }
