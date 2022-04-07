@@ -183,15 +183,15 @@ body {
     width: 290px;
     height: 290px;
     padding-top: 0px;
-     border: 5px solid #735bb6;
+     border: 5px solid #5b72b6;;
 }
 
 .pics img {
-  border: 2px solid #735bb6;
+  border: 2px solid #5b72b6;;
 }
 
 .teul {
-  border: 2px solid #735bb6;
+  border: 2px solid #5b72b6;;
 }
 
 .links img {
@@ -266,7 +266,7 @@ body {
 }
 
 .roles a {
-    color: #735bb6;;
+    color: #5b72b6;;;
 }
 
 .resume-body a:hover {
@@ -280,7 +280,7 @@ body {
     margin:0 0;
     display: block;
     text-decoration: underline;
-    text-decoration-color: #735bb6;
+    text-decoration-color: #3b549f;;
     text-decoration-thickness: 7px;
     text-underline-offset: 15px;
     padding-bottom: 0;
@@ -297,7 +297,7 @@ body {
 }
 
 .job-title {
-    color: #735bb6;;
+    color: #5b72b6;;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 0;
@@ -347,7 +347,7 @@ body {
     width: 67px;
 }
 
-progress::-webkit-progress-value { background: #735bb6;}
+progress::-webkit-progress-value { background: #5b72b6;;}
 
 progress {
     text-align: center;
@@ -373,26 +373,31 @@ progress {
     background-color: #c9c9c9;
   }
   progress::-webkit-progress-value {
-    background-color: #735bb6;
+    background-color: #5b72b6;;
   }
   progress::-moz-progress-bar {
-    background-color: #735bb6;
+    background-color: #5b72b6;;
   }
 
 
   .proj {
       text-align: center;
+      width:100%;
+
   }
   .proj ul{
-      display: inline-block;
-      margin: 0;
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
       padding: 0;
   }
 
   .proj li {
-      float:left;
     padding: 20px 20px;
     list-style: none;
+    display: inline-block;
   }
 
   .proj img {
