@@ -280,8 +280,8 @@ body {
     display: block;
     text-decoration: underline;
     text-decoration-color: #3b549f;;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 15px;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 13px;
     padding-bottom: 0;
     padding-top: 20px;
 }
