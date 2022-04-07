@@ -247,8 +247,7 @@ body {
 
 .title-divider {
     width: 400px;
-    padding-bottom :6px;
-    margin-bottom:15px;
+
 }
 
 .divider {
@@ -281,7 +280,7 @@ body {
     display: block;
     text-decoration: underline;
     text-decoration-color: #3b549f;;
-    text-decoration-thickness: 7px;
+    text-decoration-thickness: 3px;
     text-underline-offset: 15px;
     padding-bottom: 0;
     padding-top: 20px;
