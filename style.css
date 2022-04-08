@@ -245,11 +245,6 @@ body {
    
  }
 
-.title-divider {
-    width: 400px;
-
-}
-
 .divider {
   width: 670px;
 }
@@ -281,7 +276,7 @@ body {
     text-decoration: underline;
     text-decoration-color: #3b549f;;
     text-decoration-thickness: 5px;
-    text-underline-offset: 13px;
+    text-underline-offset: 5px;
     padding-bottom: 0;
     padding-top: 20px;
 }
@@ -464,7 +459,10 @@ progress {
   .pics img{
     width: 270px;
     height: 270px;
+    width: 100%;
+    
   }
+
 
   .pics {
     margin-left: auto; 
@@ -497,3 +495,28 @@ img {
 .job-place .job-title{
   font-weight: bold;
 }
+
+.resume-body progress {
+}
+  
+@media only screen and (max-width: 650px) {
+  .lang-imgs img{
+      display: none;
+  } 
+
+  
+}
+
+hr.title-divider{
+  width: 300px;
+  margin-top:0px;
+}
+
+/*
+@media only screen and (max-width: 900px) {
+  hr.title-divider{
+    display: none;
+  }
+
+}
+*/
