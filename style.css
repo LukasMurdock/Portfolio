@@ -331,7 +331,6 @@ body {
     font-weight: bolder;
     margin-bottom: 0;
     margin-top:0;
-    text-transform: uppercase;
 }
 
 .date {
@@ -351,10 +350,6 @@ body {
 
 
 
-
-.category {
-    text-transform: uppercase;
-}
 
 .skills li {
     float: left;
