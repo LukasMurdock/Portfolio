@@ -286,6 +286,12 @@ body {
   width: 670px;
 }
 
+@media screen and (max-width: 700px) {
+  .divider {
+    width: 100%;
+  }
+}
+
 .underline {
     width: 79px;
     margin-left: auto;
