@@ -57,7 +57,7 @@ a {
   }
   .nav a {
     display: block;
-    padding: 15px;
+    padding: 20px;
     text-decoration: none;
     color: rgb(231, 231, 231);
     font-weight: 800;
@@ -68,7 +68,7 @@ a {
     transition: all 0s;
   }
   .nav a:hover {
-    color: rgb(221, 219, 219);
+    color: rgb(185, 179, 179);
   z-index: 1;
   }
 
@@ -121,13 +121,12 @@ body {
 
 .nav-container {
   text-align: center;
-  margin-left:40px;
+  margin-right: -20px;
 }
 
 .main-logo {
     width: 100px;
     height: 45px;
-    margin-left: 12px;
     margin-top: 0px;
 }
 
@@ -142,7 +141,7 @@ body {
 
 @media screen and (max-width: 1000px) {
   .nav a {
-      font-size: 11px;
+      font-size: 14px;
   }
 
   .main-logo {
@@ -155,11 +154,45 @@ body {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .nav a {
+      font-size: 15px;
+      padding:10px;
+  }
+
+  .main-logo {
+    width: 50px;
+    height: 30px;
+  }
+
+  .nav {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .nav a {
+      font-size: 7px;
+      padding:0px;
+  }
+
+  .main-logo {
+    width: 25px;
+    height: 10px;
+  }
+
+  .nav {
+    margin-left: 0px;
+  }
+}
+
+
 .nav a { 
   display: inline-block;
     font-size: auto;
     
 }
+
 
 .current {
     text-decoration: underline;
