@@ -172,13 +172,13 @@ body {
 
 @media screen and (max-width: 400px) {
   .nav a {
-      font-size: 7px;
+      font-size: 12px;
       padding:0px;
   }
 
   .main-logo {
-    width: 20px;
-    height: 8px;
+    width: 35px;
+    height: 20px;
   }
 
   .nav {
