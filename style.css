@@ -522,7 +522,8 @@ progress {
 
 
   .pics img{
-    width: 12em;
+  
+    width:11em;
     height: auto;
   }
 
