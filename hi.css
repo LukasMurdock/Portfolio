@@ -7,14 +7,12 @@ body {
     animation: float 5s ease-in-out infinite;
     mix-blend-mode: multiply;
     text-align: center;
-  
-    font-weight: bold;
-    letter-spacing: 3px;
-    font-size: 20px;
+    letter-spacing: 1px;
+    font-size: 1em;
     color: #774f38;
     background-color: #ece5ce;
     padding: 20px;
-    border-radius: 11px;
+    border-radius: 30px;
     position: relative;
     box-shadow: 20px 20px #83af9b;
   }
@@ -23,12 +21,10 @@ body {
     transform: translatey(0px);
     animation: float2 5s ease-in-out infinite;
     content: ".";
-    font-weight: bold;
     -webkit-text-fill-color: #ece5ce;
     text-shadow: 22px 22px #83af9b;
     text-align: left;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 15px;
     border-radius: 11px;
     background-color: #ece5ce;
     position: absolute;
@@ -71,7 +67,6 @@ body {
   }
 
   li {
-    margin-left:-35px;
     padding:30px;
   }
 
@@ -93,6 +88,5 @@ body {
   width: 50%;
   margin-bottom:-50px;
 }
-
 
 
