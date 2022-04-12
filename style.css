@@ -267,10 +267,11 @@ body {
 }
 
 .resume-body li {
-  margin-left: 0;
+  margin-right: 0px;
   list-style: none;
   padding: 2px 5px;
   margin-bottom: 10px;
+  
 }
 
  .resume-body img {
@@ -286,11 +287,6 @@ body {
   width: 670px;
 }
 
-@media screen and (max-width: 700px) {
-  .divider {
-    width: 100%;
-  }
-}
 
 .underline {
     width: 79px;
@@ -382,7 +378,7 @@ progress::-webkit-progress-value { background: #5b72b6;;}
 progress {
     text-align: center;
     height: 1.5em;
-    width: 100%;
+    width:100%;
     -webkit-appearance: none;
     border: none;
     
@@ -403,10 +399,10 @@ progress {
     background-color: #c9c9c9;
   }
   progress::-webkit-progress-value {
-    background-color: #5b72b6;;
+    background-color: #5b72b6;
   }
   progress::-moz-progress-bar {
-    background-color: #5b72b6;;
+    background-color: #5b72b6;
   }
 
 
@@ -532,9 +528,7 @@ img {
   font-weight: bold;
 }
 
-.resume-body progress {
-}
-  
+
 @media only screen and (max-width: 650px) {
   .lang-imgs img{
       display: none;

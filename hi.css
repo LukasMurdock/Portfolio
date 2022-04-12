@@ -4,16 +4,16 @@ body {
   }
   body p {
     transform: translatey(0px);
-    animation: float 7s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
     mix-blend-mode: multiply;
     text-align: center;
-    text-transform: uppercase;
+  
     font-weight: bold;
     letter-spacing: 3px;
-    font-size: 10px;
+    font-size: 20px;
     color: #774f38;
     background-color: #ece5ce;
-    padding: 30px;
+    padding: 20px;
     border-radius: 11px;
     position: relative;
     box-shadow: 20px 20px #83af9b;
@@ -21,7 +21,7 @@ body {
   
   body p:after {
     transform: translatey(0px);
-    animation: float2 0.5s ease-in-out infinite;
+    animation: float2 5s ease-in-out infinite;
     content: ".";
     font-weight: bold;
     -webkit-text-fill-color: #ece5ce;
@@ -90,8 +90,9 @@ body {
 .bu li {
   list-style: none;
   display: inline-block;
-  width: 100%;
+  width: 50%;
   margin-bottom:-50px;
 }
+
 
 
