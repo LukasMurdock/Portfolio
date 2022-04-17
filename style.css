@@ -239,11 +239,12 @@ body {
 }
 
 .pics img {
-  border: 2px solid rgba(243, 243, 243, 0.829);
+  border: 5px solid rgba(209, 209, 209, 0.829);
+  
 }
 
 .teul {
-  border: 2px solid rgba(207, 205, 205, 0.829);
+  border: 5px solid rgba(209, 209, 209, 0.829);
 }
 
 .links img {
