@@ -155,7 +155,7 @@ body {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   .nav a {
       font-size: 15px;
       padding:10px;
@@ -168,6 +168,15 @@ body {
 
   .nav {
     margin-left: 0px;
+  }
+  .job-place {
+    font-size: 12px;
+  }
+  .date{
+    font-size: 12px;
+  }
+  .roles {
+    font-size: 10px;
   }
 }
 
@@ -371,6 +380,7 @@ body {
     margin-bottom: 0px;
   
 }
+
 
 .job-place {
     padding: 3px 3px;
@@ -587,7 +597,7 @@ hr.title-divider{
 }
 
 body {
-  background: #eee;
+  background:rgb(225, 228, 235);
 
 }
 
@@ -611,7 +621,7 @@ body {
 
 .btn::before, .btn::after {
   position: absolute;
-  background: #eee;
+  background: rgb(225, 228, 235);
   z-index: -1;
   transition: 1s;
   content: '';
