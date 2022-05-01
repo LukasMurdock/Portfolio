@@ -381,7 +381,6 @@ body {
   
 }
 
-
 .job-place {
     padding: 3px 3px;
     background: rgba(233, 230, 230, 0.829);
@@ -597,7 +596,7 @@ hr.title-divider{
 }
 
 body {
-  background:rgb(225, 228, 235);
+  background: #eee;
 
 }
 
@@ -621,7 +620,7 @@ body {
 
 .btn::before, .btn::after {
   position: absolute;
-  background: rgb(225, 228, 235);
+  background: #eee;
   z-index: -1;
   transition: 1s;
   content: '';
