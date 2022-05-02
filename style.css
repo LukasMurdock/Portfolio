@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;400;500;600&display=swap');
 
 html {
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'Poppins', sans-serif;
     color: #444646;
     
     font-size: 100%;
@@ -154,7 +155,7 @@ body {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   .nav a {
       font-size: 15px;
       padding:10px;
@@ -167,6 +168,15 @@ body {
 
   .nav {
     margin-left: 0px;
+  }
+  .job-place {
+    font-size: 12px;
+  }
+  .date{
+    font-size: 12px;
+  }
+  .roles {
+    font-size: 10px;
   }
 }
 
@@ -235,15 +245,15 @@ body {
     width: 290px;
     height: 290px;
     padding-top: 0px;
-     border: 5px solid rgba(209, 209, 209, 0.829);
 }
 
 .pics img {
-  border: 2px solid rgba(243, 243, 243, 0.829);
+  border: 5px solid rgba(209, 209, 209, 0.829);
+  
 }
 
 .teul {
-  border: 2px solid rgba(207, 205, 205, 0.829);
+  border: 5px solid rgba(209, 209, 209, 0.829);
 }
 
 .links img {
@@ -307,7 +317,7 @@ body {
  @media screen and (max-width: 490px) {
 
   * {
-    font-size: 93%;
+    font-size: 90%;
   }
 
   progress{
@@ -365,7 +375,7 @@ body {
 }
 
 .date {
-    background: rgba(235, 235, 235, 0.829);
+    background: rgba(233, 230, 230, 0.829);
     display: inline-block;
     margin-bottom: 0px;
   
@@ -373,7 +383,7 @@ body {
 
 .job-place {
     padding: 3px 3px;
-    background: rgba(240, 244, 247, 0.829);
+    background: rgba(233, 230, 230, 0.829);
     display: inline-block;
     margin-bottom: 0px;
 }
@@ -387,11 +397,11 @@ body {
 }
 
 .skills p{
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 .skills progress {
-    width: 12em;
+    width: 8em;
     height: 1em;
     border-radius: 1px; 
     padding-left: 5px;
@@ -413,7 +423,7 @@ progress {
   }
   progress:before {
     content: attr(data-label);
-    font-size: 0.8em;
+    font-size: 0.6em;
     vertical-align: 0;
     
     /*Position text over the progress bar */
@@ -425,9 +435,6 @@ progress {
     background-color: #c9c9c9;
   }
   progress::-webkit-progress-value {
-    background-color: #5b72b6;
-  }
-  progress::-moz-progress-bar {
     background-color: #5b72b6;
   }
 
@@ -476,7 +483,7 @@ progress {
     opacity: 0;
     transition: opacity .2s, visibility .2s;
     text-align: left;
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .luke {
@@ -571,7 +578,7 @@ img {
 
 hr.title-divider{
   width: 0px;
-  margin-top:5px;
+  margin-top:3px;
 }
 
 /*
@@ -650,4 +657,14 @@ body {
 
 .btn:hover {
   background: #fff;
+}
+
+.skill-cont{
+}
+.skill-cont h3{ 
+  text-align: center;
+}
+
+.skill-cont-cont {
+  float:left;
 }
