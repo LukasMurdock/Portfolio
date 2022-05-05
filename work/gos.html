@@ -2,13 +2,13 @@
 <html>
 <header>
     <title>Game of Set</title>
-    <%= stylesheet_link_tag "gos", "data-turbo-track": "reload" %>
+    <link href="/work/gos.css" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </header>
 
 <body style="background-color:white;">
 
-    <h2>JavaScript Game of Set - <span style="margin-top: -22px; margin-bottom:2px;"><a href="gos_inst.html">See Instructions (it will reset the game lol)</a></span></h2>
+    <h2>JavaScript Game of Set - <span style="margin-top: -22px; margin-bottom:2px;"><a href="/work/gos-inst.html">See Instructions (it will reset the game lol)</a></span></h2>
     <div class="container">
         <div id="displayedCards"></div>
 
@@ -22,7 +22,7 @@
                 
                     <hr/>
 
-                <p>Status: <b><span id="status"></span></b></p>
+                <p>Status: <span id="status"></span></p>
                 <p>
                     <button id="hint" onclick="getHint()">Hint</button>
                 </p>
@@ -32,7 +32,8 @@
                 <p>Created by Jay Shin & Klejdi Vrejak</p>
         </div>
     </div>
-    <%= javascript_include_tag "gos" %>
+    
+    <script src="/work/gos.js"></script>
 
 </body>
 </html>

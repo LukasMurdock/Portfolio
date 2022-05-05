@@ -160,9 +160,9 @@ function deal(first, second, third) {
 function dealExtra3() {
     // HTML GUI update. If 3 more cards are dealt in the beginning, it prints the following message.
     if (setsLeft == 27){
-        document.getElementById("status").innerText = "No sets, so 3 more cards were dealt."
+        document.getElementById("status").innerText = "3 more cards were added because there were no sets in the previous deck."
     } else { // If 3 more cards are dealt during the game, it must have been after user found a set, so it prints the following message.
-        document.getElementById("status").innerText = "That was a set. No sets, so 3 more cards were dealt."
+        document.getElementById("status").innerText = "That was a set. 3 more cards were added because there were no sets in the previous deck."
     }
 
     // drawing cards from the deck
@@ -310,9 +310,9 @@ function renderCards() {
             button1.id = i + 1;
             button1.classList.add("button");
             button1.innerText = String(i+1);
-            button1.style.height = "20px";
-            button1.style.width = "20px";
-            button1.style.border = "1px solid black";
+            button1.style.height = "40px";
+            button1.style.width = "40px";
+            button1.style.border = "2px solid black";
             
             outside.appendChild(card);
             outside.appendChild(button1);

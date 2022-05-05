@@ -2,12 +2,12 @@
 <html>
 <header>
     <title>Game of Set</title>
-    <%= stylesheet_link_tag "gos", "data-turbo-track": "reload" %>
+    <link href="/work/gos.css" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </header>
 <body style="background-color:white;">
     <h2>JavaScript Game of Set</h2>
-    <h3><a href="gos.html">Go Back to the Game</a></h3>
+    <h3><a href="/work/gos.html">Go Back to the Game</a></h3>
     <p> The Game of Set is a card game. </p>
     <p>The deck consists of 81 cards of 4 features: <b>number, color, shape, and shading</b>. The game starts by dealing 12 cards.</p>
     <p>Number: 1, 2, 3</p>
@@ -20,6 +20,5 @@
     <p>After finding a set, the cards you found will be removed and 3 more cards will be dealt to keep 12 cards on the table.</p>
     <p>If a set does not exists on the table, 3 more cards will be dealt again (15 cards on the table).</p>
     <p>The game is over when no sets are left to be found.</p>
-    <%= javascript_include_tag "gos" %>
 </body>
 </html>
