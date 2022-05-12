@@ -12,17 +12,17 @@
 </head>
 
 <body>
-  <div class="nav-container">
+<div class="nav-container">
     <div class="nav">
-      <a href="resume.html">Resume</a>
-      <a href="work.html">Work</a>
+      <a href="resume.php">Resume</a>
+      <a href="work.php">Work</a>
     </div>
     <div class="nav">
-      <a href="index.html"><img class="main-logo" src="sources/shin-jay.png"/></a>
+      <a href="index.php"><img class="main-logo" src="sources/shin-jay.png"/></a>
     </div>
     <div class="nav">
-      <a href="my-life.html">My Life</a>
-      <a href="review.html">Review</a>
+      <a href="my-life.php">My Life</a>
+      <a href="review.php">Review</a>
     </div>
   </div>
   
