@@ -34,7 +34,6 @@
     <br/>
 
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-
     <div class="btn">
       <span class="noselect">
         shin.810@osu.edu
