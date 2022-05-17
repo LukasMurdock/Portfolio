@@ -379,7 +379,6 @@ body {
     font-weight: bolder;
     margin-bottom: 0;
     margin-top:0;
-    font-weight: 500;
 }
 
 .date {
@@ -387,7 +386,7 @@ body {
     display: inline-block;
     margin-bottom: 0px;
     padding: 3px 3px;
-    font-weight: 100;
+    font-weight: 300;
   
 }
 
@@ -396,7 +395,7 @@ body {
     background: rgba(57, 57, 60, 0.829);
     display: inline-block;
     margin-bottom: 0px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 
@@ -443,10 +442,10 @@ progress {
     right:0;
   }
   progress::-webkit-progress-bar {
-    background-color: #aaaaaa;
+    background-color: #6e6c6c;
   }
   progress::-webkit-progress-value {
-    background-color: #649AB2;
+    background-color: #9595ca;
   }
 
 
@@ -723,7 +722,7 @@ body {
 #quote:after {
   transform: translatey(0px);
   animation: float2 5ss ease-in-out infinite;
-  content: ".";
+  content: "";
   -webkit-text-fill-color: #ece5ce;
   text-shadow: 2em 2em #6e798d;
   text-align: left;
@@ -792,6 +791,15 @@ margin-bottom: -10px;
 }
 
 .resume-body a, .resume-body a:visited, .des a, .des a:visited{
-color:#a6a9a0;
 
+  color: #afafca;
+
+}
+
+.des a:hover {
+  text-decoration: underline;
+}
+
+.roles p {
+  font-size: 17px;
 }
