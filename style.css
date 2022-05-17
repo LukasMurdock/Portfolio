@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;400;500;600&display=swap');
 
 html {
-  font-family: 'Poppins', sans-serif;
-    color: #444646;
+  font-family: open sans,helvetica neue,sans-serif;
+    color: #C4C4C5;
     
     font-size: 100%;
+  
 }
-
 
 
 a {
   text-decoration: none;
 }
 
+.des p {
+  transform: translateX(-16px);
+  max-width: 800px;
+}
 
 /* SHIFT */
 .nav a {
@@ -60,7 +64,7 @@ a {
     display: block;
     padding: 20px;
     text-decoration: none;
-    color: rgb(231, 231, 231);
+    color:#C4C4C5;
     font-weight: 800;
   }
   .nav a,
@@ -69,7 +73,7 @@ a {
     transition: all 0s;
   }
   .nav a:hover {
-    color: rgb(185, 179, 179);
+    color: #C4C4C5;
   z-index: 1;
   }
 
@@ -110,6 +114,13 @@ a {
 
     margin-left: 0;
     margin-right: 0;
+    color: #C4C4C5;
+    filter: invert(80%);
+
+}
+
+.resume-body img {
+  filter: invert(100%);
 }
 
   
@@ -129,6 +140,7 @@ body {
     width: 100px;
     height: 45px;
     margin-top: 0px;
+    filter: invert(80%);
 }
 
 .nav{
@@ -175,9 +187,7 @@ body {
   .date{
     font-size: 12px;
   }
-  .roles {
-    font-size: 10px;
-  }
+  
 }
 
 @media screen and (max-width: 400px) {
@@ -226,7 +236,7 @@ body {
 
 .nav a:link { 
     text-decoration: none;
-    color: #222424;
+    color: #C4C4C5;
     
 }
 
@@ -236,7 +246,7 @@ body {
 
 .nav a:visited {
     text-decoration: none;
-    color: #222424;
+    color: #C4C4C5;
 }
 
 
@@ -320,9 +330,6 @@ body {
     font-size: 90%;
   }
 
-  progress{
-  }
-
 }
 
 
@@ -335,11 +342,11 @@ body {
 .roles p{
     margin: 0;
     font-size: 1em;
+    word-spacing: 1px;
 }
 
-.roles a {
-    color: #5b72b6;;;
-}
+
+
 
 .resume-body a:hover {
     text-decoration: underline;
@@ -354,7 +361,7 @@ body {
     padding-bottom: 0;
     padding-top: 20px;
     font-family: 'Tourney', cursive;
-    color:#0a0a0a;
+    color:#eee;
 }
 
 .sub-title {
@@ -363,29 +370,33 @@ body {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 17px;
-  color: #45505b;
+  color: #eee;
 }
 
 .job-title {
-    color: #000000;;
+    color: #eee;
     font-size: 1em;
     font-weight: bolder;
     margin-bottom: 0;
     margin-top:0;
+    font-weight: 500;
 }
 
 .date {
-    background: rgba(233, 230, 230, 0.829);
+    background: rgba(59, 57, 61, 0.829);
     display: inline-block;
     margin-bottom: 0px;
+    padding: 3px 3px;
+    font-weight: 100;
   
 }
 
 .job-place {
     padding: 3px 3px;
-    background: rgba(233, 230, 230, 0.829);
+    background: rgba(57, 57, 60, 0.829);
     display: inline-block;
     margin-bottom: 0px;
+    font-weight: 100;
 }
 
 
@@ -432,10 +443,10 @@ progress {
     right:0;
   }
   progress::-webkit-progress-bar {
-    background-color: #c9c9c9;
+    background-color: #aaaaaa;
   }
   progress::-webkit-progress-value {
-    background-color: #5b72b6;
+    background-color: #649AB2;
   }
 
 
@@ -478,7 +489,7 @@ progress {
     left: 0;
     right: 0;
     background: rgba(230, 230, 230, 0.877);
-    color: #000000;
+    color: black;
     visibility: hidden;
     opacity: 0;
     transition: opacity .2s, visibility .2s;
@@ -541,12 +552,10 @@ progress {
     margin-right:auto;
   }
 
-  .vid {
+  .container {  
     text-align: center;
-  }
-
-  .container {
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container ul {
     display: inline-block;
@@ -559,6 +568,31 @@ progress {
   margin-left: 0;
 }
 
+.container img {
+  width: 800px; height: auto; border-radius: 15px;
+}
+
+
+@media screen and (max-width: 670px) {
+
+  .container img {
+    width: 100vw;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 740px) {
+
+  .roles, .resume-body, .job-place, .date{
+    font-size: 2vw;
+  } 
+
+  .title {
+    font-size: 4vw;
+  }
+
+}
 img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(33%);
@@ -596,7 +630,7 @@ hr.title-divider{
 }
 
 body {
-  background: #eee;
+  background: rgb(40, 41, 44);
 
 }
 
@@ -605,7 +639,7 @@ body {
   margin-right: auto;
   width: 200px;
   height: 100px;
-  border: 1px solid #333;
+  border: 2px solid #333;
   font-family: 'Cinzel', serif;
   font-size: 17px;
   cursor: pointer;
@@ -620,7 +654,7 @@ body {
 
 .btn::before, .btn::after {
   position: absolute;
-  background: #eee;
+  background: rgb(40, 41, 44);
   z-index: -1;
   transition: 1s;
   content: '';
@@ -647,16 +681,16 @@ body {
 
 .btn:hover::before {
   width: 0px;
-  background: #fff;
+  background: rgb(40, 41, 44);
 }
 
 .btn:hover::after {
   height: 0px;
-  background: #fff;
+  background: #6e798d;
 }
 
 .btn:hover {
-  background: #fff;
+  background:#6e798d;
 }
 
 .skill-cont{
@@ -667,4 +701,97 @@ body {
 
 .skill-cont-cont {
   float:left;
+}
+
+
+
+#quote {
+  animation: float 7s ease-in-out infinite;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1em;
+  color: #774f38;
+  background-color: rgba(230, 230, 230, 0.877);
+  padding: 1.5em;
+  border-radius: 2em;
+  position: relative;
+  box-shadow: 20px 20px #6e798d;
+  transform: translateY(10px);
+  margin-left:-20px;
+}
+
+#quote:after {
+  transform: translatey(0px);
+  animation: float2 5ss ease-in-out infinite;
+  content: ".";
+  -webkit-text-fill-color: #ece5ce;
+  text-shadow: 2em 2em #6e798d;
+  text-align: left;
+  font-size: 1em;
+  border-radius: 11px;
+  background-color: #ece5ce;
+  position: absolute;
+  display: block;
+  left: 0;
+  box-shadow: 22px 22px #6e798d;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+ }
+  50% {
+    transform: translatey(-10px);
+ }
+  100% {
+    transform: translatey(0px);
+ }
+}
+@keyframes float2 {
+  0% {
+    line-height: 30px;
+    transform: translatey(0px);
+ }
+  55% {
+    transform: translatey(-10px);
+ }
+  60% {
+    line-height: 10px;
+ }
+  100% {
+    line-height: 30px;
+    transform: translatey(0px);
+ }
+}
+
+
+ul {
+  list-style:none;
+  text-align: center;
+}
+
+
+#quote{
+list-style: none;
+display: inline-block;
+width: 130px;
+margin-top: -40px;
+margin-bottom: -10px;
+
+}
+
+
+
+#review {
+  margin-bottom: 42px;
+}
+
+
+.job-title span {
+  color:#b6bab5;
+  font-size: 1.2em;
+}
+
+.resume-body a, .resume-body a:visited, .des a, .des a:visited{
+color:#a6a9a0;
+
 }

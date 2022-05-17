@@ -5,16 +5,16 @@ body {
   body p {
     transform: translatey(0px);
     animation: float 3s ease-in-out infinite;
-    mix-blend-mode: multiply;
+
     text-align: center;
     letter-spacing: 1px;
     font-size: 1em;
     color: #774f38;
-    background-color: #ece5ce;
-    padding: 1em;
+    background-color: rgba(230, 230, 230, 0.877);
+    padding: 0.8em;
     border-radius: 2em;
     position: relative;
-    box-shadow: 20px 20px #83af9b;
+    box-shadow: 20px 20px #6e798d;
   }
   
   body p:after {
@@ -22,7 +22,7 @@ body {
     animation: float2 3s ease-in-out infinite;
     content: ".";
     -webkit-text-fill-color: #ece5ce;
-    text-shadow: 22px 22px #83af9b;
+    text-shadow: 22px 22px #6e798d;
     text-align: left;
     font-size: 1em;
     border-radius: 11px;
@@ -30,7 +30,7 @@ body {
     position: absolute;
     display: block;
     left: 0;
-    box-shadow: 22px 22px #83af9b;
+    box-shadow: 22px 22px #6e798d;
   }
   @keyframes float {
     0% {
@@ -67,7 +67,7 @@ body {
   }
 
   li {
-    padding:33px;
+    padding:0px;
   }
 
   .bu {
@@ -89,3 +89,13 @@ body {
 }
 
 
+a, a:visited {
+  color: #6e798d;;
+}
+
+
+
+
+#review {
+  margin-bottom: 10px;
+}
