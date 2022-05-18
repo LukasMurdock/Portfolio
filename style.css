@@ -341,7 +341,7 @@ body {
 
 .roles p{
     margin: 0;
-    font-size: 1em;
+    font-size: 0.95em;
     word-spacing: 1px;
 }
 
@@ -374,11 +374,14 @@ body {
 }
 
 .job-title {
-    color: #eee;
-    font-size: 1em;
-    font-weight: bolder;
+  color: #C4C4C5;
+    font-size: 0.9em;
     margin-bottom: 0;
     margin-top:0;
+}
+
+.job-title span{
+  color: #C4C4C5;
 }
 
 .date {
@@ -579,6 +582,10 @@ progress {
     height: auto;
   }
 
+}
+
+.container p {
+  font-size: 1em;
 }
 
 @media screen and (max-width: 740px) {
@@ -798,8 +805,4 @@ margin-bottom: -10px;
 
 .des a:hover {
   text-decoration: underline;
-}
-
-.roles p {
-  font-size: 17px;
 }
