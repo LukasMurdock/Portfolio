@@ -341,7 +341,7 @@ body {
 
 .roles p{
     margin: 0;
-    font-size: 0.95em;
+    font-size: 1em;
     word-spacing: 1px;
 }
 
@@ -585,7 +585,8 @@ progress {
 }
 
 .container p {
-  font-size: 1em;
+  font-size: 1.3em;
+  font-weight: 340;
 }
 
 @media screen and (max-width: 740px) {
@@ -779,8 +780,8 @@ ul {
 #quote{
 list-style: none;
 display: inline-block;
-width: 130px;
-margin-top: -40px;
+width: 150px;
+margin-top: -20px;
 margin-bottom: -10px;
 
 }
