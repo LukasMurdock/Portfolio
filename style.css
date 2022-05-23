@@ -472,8 +472,8 @@ progress {
   }
 
   .proj img {
-      width: 27em;
-      height: 27em;
+      width: 30vw;
+      height: 30vw;
   }
 
   .img__wrap {
@@ -482,9 +482,9 @@ progress {
   }
   
   .img__description {
-    width: 100%;
-    height: 100%;
-    transform: translateY(-16px);
+    width: 30vw;
+    height: 30vw;
+    transform: translateY(-1vw);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -496,16 +496,7 @@ progress {
     opacity: 0;
     transition: opacity .2s, visibility .2s;
     text-align: left;
-    font-size: 0.8em;
-  }
-
-  .luke {
-    width: 1em;
-    height:auto;
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
-    width: 10%;
+    font-size: 0.8vw;
   }
   
   .img__wrap:hover .img__description {
@@ -518,8 +509,8 @@ progress {
   }
 
   .img__description img {
-    width: 20px;
-    height: 20px;
+    width: 1.5vw;
+    height: 1.5vw;
   }
 
   .proj a {
