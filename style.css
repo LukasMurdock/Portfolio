@@ -7,7 +7,11 @@ html {
     color: #C4C4C5;
     
     font-size: 100%;
-  
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
 
 
@@ -33,29 +37,13 @@ a {
   .nav a:after {
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     margin: auto;
     width: 100%;
     height: 1px;
     content: '.';
     color: transparent;
-    background: #F1C40F;
-    visibility: none;
-    opacity: 0;
-    z-index: -1;
-    position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: rgb(243, 243, 243);
-  height: 1px;
+
+
   }
   .nav a:hover:after {
     opacity: 1;
@@ -64,7 +52,7 @@ a {
   }
   .nav a {
     display: block;
-    padding: 20px;
+    padding: 5vw;
     text-decoration: none;
     color:#C4C4C5;
     font-weight: 800;
@@ -260,8 +248,8 @@ body {
 .resume-body ul {
 
   text-align: left;
-  margin-left: -10px;
-  margin-right: -70px;
+  margin-left: 0px;
+  margin-right: 0px;
   display: inline-block;
   
 }
@@ -276,6 +264,31 @@ body {
   margin-bottom: -5px;
   
 }
+
+@media screen and (max-width: 400px) {
+
+  .resume-body ul {
+
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    margin-bottom:-5px;
+    
+  }
+
+  .resume-body li {
+    width: 47vw;
+    padding: 0vw;
+    float: left;
+    list-style: none;
+    margin-left: 18vw;
+    margin-right: 18vw;
+    margin-bottom: 5px;
+  }
+
+}
+
 
 
  .resume-body img {
@@ -318,7 +331,7 @@ body {
 }
 
 .roles p{
-    margin: 0.3vw;
+    margin: 0.2vw;
     font-size: 1.25vw;
     word-spacing: 1px;
     
@@ -667,8 +680,8 @@ body {
 }
 
 .skill-cont img {
-  width: 4vw;
-  height: 4vw;
+  width: 3vw;
+  height: 3vw;
 }
 
 .skill-cont {
@@ -682,8 +695,8 @@ body {
 
 
 .skill-cont p {
-  margin-top:-5px;
-  margin-bottom: 5px;
+  margin-top:0px;
+  margin-bottom: 0px;
   font-size: 1vw;
 }
 
@@ -832,10 +845,14 @@ margin-bottom: -10px;
 
 .langs {
   display:inline-block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .langs li {
   float: left;
-  padding: 10px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin-top: 0.5vw;
 }
 
