@@ -1,61 +1,57 @@
-
 .bubble {
-    transform: translatey(0px);
-    animation: float 3s ease-in-out infinite;
+  transform: translatey(0px);
+  animation: float 5s ease-in-out infinite;
 
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 1em;
-    color: #774f38;
-    background-color: rgba(230, 230, 230, 0.877);
-    padding: 0.6em;
-    border-radius: 1em;
-    position: relative;
-    box-shadow: 10px 10px #6e798d;
-  }
-  
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1em;
+  color: #774f38;
+  background-color: rgba(230, 230, 230, 0.877);
+  padding: 0.5em;
+  border-radius: 1em;
+  position: relative;
+  box-shadow: 1vw 1vw #6e798d;
+}
+
 .bubble:after {
-    transform: translatey(0px);
-    animation: float2 3s ease-in-out infinite;
- 
-    -webkit-text-fill-color: #ece5ce;
-    text-shadow: 22px 22px #6e798d;
-    text-align: left;
-    font-size: 1em;
-    border-radius: 11px;
-    background-color: #ece5ce;
-    position: absolute;
-    display: block;
-    left: 0;
-    box-shadow: 22px 22px #6e798d;
-  }
-  @keyframes float {
-    0% {
-      transform: translatey(0px);
-   }
-    50% {
-      transform: translatey(-4px);
-   }
-    100% {
-      transform: translatey(0px);
-   }
-  }
-  @keyframes float2 {
-    0% {
-      line-height: 30px;
-      transform: translatey(0px);
-   }
-    55% {
-      transform: translatey(-7px);
-   }
-    60% {
-      line-height: 10px;
-   }
-    100% {
-      line-height: 30px;
-      transform: translatey(0px);
-   }
-  }
-  
+  transform: translatey(10px);
+  animation: float2 5s ease-in-out infinite;
 
-
+  -webkit-text-fill-color: #ece5ce;
+  text-shadow: 22px 22px #6e798d;
+  text-align: left;
+  font-size: 1em;
+  border-radius: 11px;
+  background-color: #ece5ce;
+  position: absolute;
+  display: block;
+  left: 0;
+  box-shadow: 22px 22px #6e798d;
+}
+@keyframes float {
+  0% {
+    transform: translatey(2vw);
+ }
+  50% {
+    transform: translatey(-1vw);
+ }
+  100% {
+    transform: translatey(2vw);
+ }
+}
+@keyframes float2 {
+  0% {
+    line-height: 30px;
+    transform: translatey(2vw);
+ }
+  55% {
+    transform: translatey(-1vw);
+ }
+  60% {
+    line-height: 10px;
+ }
+  100% {
+    line-height: 30px;
+    transform: translatey(2vw);
+ }
+}

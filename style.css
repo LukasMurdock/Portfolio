@@ -52,7 +52,7 @@ a {
   }
   .nav a {
     display: block;
-    padding: 5vw;
+    padding: 3vw;
     text-decoration: none;
     color:#C4C4C5;
     font-weight: 800;
@@ -197,6 +197,7 @@ body {
 .links {
   margin-right: 38px;
     text-align: center;
+    margin-top:3vw;
 }
  .links li {
     display: inline-block;
