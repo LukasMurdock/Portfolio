@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gudea&display=swap');
 
 html {
-  font-family: open sans,helvetica neue,sans-serif;
+  font-family: 'Gudea', sans-serif;
     color: #C4C4C5;
     
     font-size: 100%;
@@ -133,12 +135,12 @@ body {
 
 .nav-container {
   text-align: center;
-  margin-right: -20px;
+  font-size: 1.5vw;
 }
 
 .main-logo {
-    width: 100px;
-    height: 45px;
+    width: 10vw;
+    height: 4vw;
     margin-top: 0px;
     filter: invert(80%);
 }
@@ -146,81 +148,15 @@ body {
 .nav{
     overflow: hidden;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: -10px;
     display: inline-block;
 
 }
 
-@media screen and (max-width: 1000px) {
-  .nav a {
-      font-size: 14px;
-  }
 
-  .main-logo {
-    width: 60px;
-    height: 32.5px;
-  }
 
-  .nav {
-    margin-left: 0px;
-  }
-}
 
-@media screen and (max-width: 720px) {
-  .nav a {
-      font-size: 15px;
-      padding:10px;
-  }
-
-  .main-logo {
-    width: 70px;
-    height: 50px;
-  }
-
-  .nav {
-    margin-left: 0px;
-  }
-  .job-place {
-    font-size: 12px;
-  }
-  .date{
-    font-size: 12px;
-  }
-  
-}
-
-@media screen and (max-width: 400px) {
-  .nav a {
-      font-size: 12px;
-      padding:6px;
-  }
-
-  .main-logo {
-    width: 50px;
-    height: 30px;
-  }
-
-  .nav {
-    margin-left: 0px;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  .nav a {
-      font-size: 10px;
-      padding:3px;
-  }
-
-  .main-logo {
-    width: 20px;
-    height: 8px;
-  }
-
-  .nav {
-    margin-left: 0px;
-  }
-}
 
 
 .nav a { 
@@ -291,27 +227,32 @@ body {
 
 .resume-body {
   text-align: center;
-  margin-left: 0;
-  margin-right: 0;
+
 }
 
 .resume-body ul {
-  display: inline-block;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-}
 
-.resume-body li {
-  margin-right: 0px;
-  list-style: none;
-  padding: 2px 5px;
-  margin-bottom: 10px;
+  text-align: left;
+  margin-left: -10px;
+  margin-right: -70px;
+  display: inline-block;
   
 }
 
+.resume-body li {
+  width: 47vw;
+  padding: 0vw;
+  float: left;
+  list-style: none;
+  margin-left: -10px;
+  margin-right: 0px;
+  margin-bottom: -5px;
+  
+}
+
+
  .resume-body img {
-     width: 15px;
+     width: 1vw;
  }
 
  .resume-body a {
@@ -319,17 +260,27 @@ body {
    
  }
 
+.company-pic {
+  width: 27vw !important;
+  height: 8vw !important;
+  filter: invert(0%) !important;
+  margin-left: 5vw;
+}
+
  .divider {
-  width: autol
+   margin-left: 0px;
+    width: 43vw;
 }
 
 
- @media screen and (max-width: 490px) {
 
-  * {
-    font-size: 90%;
-  }
 
+#last ul {
+
+}
+
+#last li {
+  display: inline;
 }
 
 
@@ -340,9 +291,16 @@ body {
 }
 
 .roles p{
-    margin: 0;
-    font-size: 1em;
+    margin: 0.3vw;
+    font-size: 1.25vw;
     word-spacing: 1px;
+    
+}
+
+.roles h4 {
+  font-size: 1.6vw;
+  margin-top:0.8vw;
+  margin-bottom: 0px;
 }
 
 
@@ -353,13 +311,13 @@ body {
 }
 
 .title {
-    font-size: 30px;
-    padding: 7px;
+
+    font-size: 3vw;
     text-align: center;
     margin:0 0;
     display: block;
-    padding-bottom: 0;
-    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     font-family: 'Tourney', cursive;
     color:#eee;
 }
@@ -374,15 +332,13 @@ body {
 }
 
 .job-title {
-  color: #C4C4C5;
-    font-size: 0.9em;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 1vw;
     margin-bottom: 0;
     margin-top:0;
+    font-size: 1.2vw;
 }
 
-.job-title span{
-  color: #C4C4C5;
-}
 
 .date {
     background: rgba(59, 57, 61, 0.829);
@@ -390,6 +346,7 @@ body {
     margin-bottom: 0px;
     padding: 3px 3px;
     font-weight: 300;
+    font-size: 1.1vw;
   
 }
 
@@ -399,31 +356,31 @@ body {
     display: inline-block;
     margin-bottom: 0px;
     font-weight: 300;
+    font-size: 1.1vw;
 }
 
 
 
 
-
+.ls {
+  margin-left:0px;
+}
 .skills li {
     float: left;
+    width: 10vw;
 }
 
 .skills p{
     margin-right: 0px;
 }
 
-.skills progress {
-    width: 8em;
-    height: 1em;
-    border-radius: 1px; 
-    padding-left: 5px;
-    padding-right: 15px;
+progress {
+    width: 5vw;
+    height: 0.5em;
+    border-radius: 10px; 
 }
 
-.skills img {
-    width: 67px;
-}
+
 
 
 progress {
@@ -445,10 +402,10 @@ progress {
     right:0;
   }
   progress::-webkit-progress-bar {
-    background-color: #6e6c6c;
+    background-color: #b8b8b8;
   }
   progress::-webkit-progress-value {
-    background-color: #9595ca;
+    background-color: #5e5eb1;
   }
 
 
@@ -472,8 +429,8 @@ progress {
   }
 
   .proj img {
-      width: 30vw;
-      height: 30vw;
+      width: 22vw;
+      height: 22vw;
   }
 
   .img__wrap {
@@ -482,8 +439,8 @@ progress {
   }
   
   .img__description {
-    width: 30vw;
-    height: 30vw;
+    width: 22vw;
+    height: 22vw;
     transform: translateY(-1vw);
     position: absolute;
     top: 0;
@@ -504,13 +461,10 @@ progress {
     opacity: 1;
   }
   
-  .img__description p {
-    margin-left: 15px;
-  }
 
   .img__description img {
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 1vw;
+    height: 1vw;
   }
 
   .proj a {
@@ -583,13 +537,6 @@ progress {
 
 @media screen and (max-width: 740px) {
 
-  .roles, .resume-body, .job-place, .date{
-    font-size: 2vw;
-  } 
-
-  .title {
-    font-size: 4vw;
-  }
 
 }
 img {
@@ -692,15 +639,39 @@ body {
   background:#6e798d;
 }
 
-.skill-cont{
-}
-.skill-cont h3{ 
-  text-align: center;
+.skill-cont img {
+  width: 4vw;
+  height: 4vw;
 }
 
-.skill-cont-cont {
-  float:left;
+.skill-cont {
+  margin-left: -50px;
 }
+
+.skill-cont ul {
+  margin-left:-45px;
+}
+
+
+
+.skill-cont p {
+  margin-top:-5px;
+  margin-bottom: 5px;
+  font-size: 1vw;
+}
+
+.skill-cont h3{ 
+  margin-top:-20px;
+  margin-bottom:-2vw;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.skill-cont h4 {
+  margin-bottom: 0px;
+  font-size: 1.8vw;
+}
+
 
 
 
@@ -799,3 +770,45 @@ margin-bottom: -10px;
 .des a:hover {
   text-decoration: underline;
 }
+
+
+
+.p{
+
+}
+
+.skill-body {
+  text-align: center;
+}
+
+.skill-body ul {
+  display: inline-block;
+
+}
+
+.skill-body span {
+  font-size: 1.5vw;
+}
+
+.skill-title{
+  font-size: 2vw;
+}
+
+@media screen and (max-width: 640px) {
+  .skill-body ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+  }
+}
+
+.langs {
+  display:inline-block;
+}
+
+.langs li {
+  float: left;
+  padding: 10px;
+}
+
