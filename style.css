@@ -176,7 +176,7 @@ body {
 
 
 .headshot {
-    width: 20vw;
+    width: 22vw;
     height: auto;
 
 }
@@ -232,8 +232,8 @@ body {
   margin-left: 20px;
   display:inline-block;  
   text-align: left;
-  width: 40%;
-  font-size: 1.2vw;
+  width: 30%;
+  font-size: 1vw;
     
  }
  .contact-body h3 {
