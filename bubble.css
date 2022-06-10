@@ -1,8 +1,5 @@
-body {
-    display: grid;
-    place-items: center;
-  }
-  body p {
+
+.bubble {
     transform: translatey(0px);
     animation: float 3s ease-in-out infinite;
 
@@ -11,16 +8,16 @@ body {
     font-size: 1em;
     color: #774f38;
     background-color: rgba(230, 230, 230, 0.877);
-    padding: 0.8em;
-    border-radius: 2em;
+    padding: 0.6em;
+    border-radius: 1em;
     position: relative;
-    box-shadow: 20px 20px #6e798d;
+    box-shadow: 10px 10px #6e798d;
   }
   
-  body p:after {
+.bubble:after {
     transform: translatey(0px);
     animation: float2 3s ease-in-out infinite;
-    content: ".";
+ 
     -webkit-text-fill-color: #ece5ce;
     text-shadow: 22px 22px #6e798d;
     text-align: left;
@@ -37,7 +34,7 @@ body {
       transform: translatey(0px);
    }
     50% {
-      transform: translatey(-20px);
+      transform: translatey(-4px);
    }
     100% {
       transform: translatey(0px);
@@ -49,7 +46,7 @@ body {
       transform: translatey(0px);
    }
     55% {
-      transform: translatey(-20px);
+      transform: translatey(-7px);
    }
     60% {
       line-height: 10px;
@@ -61,41 +58,4 @@ body {
   }
   
 
-  ul {
-    list-style:none;
-    text-align: center;
-  }
 
-  li {
-    padding:0px;
-  }
-
-  .bu {
-    text-align: center;
-
-}
-.bu ul{
-    display: block;
-    text-align: center;
-    margin-left: -33px;
-    margin-right: 0px;
-}
-
-.bu li {
-  list-style: none;
-  display: inline-block;
-  width: 100%;
-  margin-bottom:-50px;
-}
-
-
-a, a:visited {
-  color: #6e798d;;
-}
-
-
-
-
-#review {
-  margin-bottom: 10px;
-}

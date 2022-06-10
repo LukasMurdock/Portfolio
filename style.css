@@ -111,8 +111,8 @@ a {
 }
 
 .image-smaller img {
-  width: 33px !important;
-    height: 33px !important;
+  width: 3vw !important;
+    height: 3vw !important;
 
     margin-left: 0;
     margin-right: 0;
@@ -188,9 +188,9 @@ body {
 
 
 .headshot {
-    width: 290px;
-    height: 290px;
-    padding-top: 0px;
+    width: 20vw;
+    height: auto;
+
 }
 
 .pics img {
@@ -218,8 +218,35 @@ body {
 
  .contact-body {
     text-align: center;
+    width: 100%;
  }
 
+ .contact-body .profile {
+  display:inline-block;  
+  text-align: left;
+    
+ }
+
+ .contact-body .profile p {
+  font-size: 0.8vw;
+  text-align: center;
+    
+ }
+
+ .profile2 a {
+  color: #afafca;
+ }
+
+
+ .contact-body .profile2 {
+  margin-top:20px;
+  margin-left: 20px;
+  display:inline-block;  
+  text-align: left;
+  width: 40%;
+  font-size: 1.2vw;
+    
+ }
  .contact-body h3 {
      text-align: center;
  }
