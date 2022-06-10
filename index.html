@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" ng-app="myApp" ng-controller="mainController">
   
 <head>
   <meta charset="UTF-8">
@@ -7,6 +7,8 @@
   <title>Jay Shin</title>
   <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="bubble.css"/>  
+  <script src="https://code.angularjs.org/1.3.0-rc.1/angular.js"></script>
+  <script src="https://code.angularjs.org/1.3.0-rc.1/angular-messages.min.js"></script>
   <meta name="viewport" content="width=1000">
 </head>
 
@@ -31,7 +33,7 @@
 
       <img class="headshot" src="shay.png"/>
       <p><b>Jay Shin</b></p>
-      <p>Aspiring Software Engineer</p>
+      <p>{{ job }}</p>
       <p>OSU '24</p>
     </div>
     <div class="profile2">
@@ -44,7 +46,7 @@
             composing music, freestyle rapping, playing the guitar, and playing OverWatch and KartRider Rush+.  
       </p>
         <p class="bubble" style="margin-bottom:0px;" >
-          Connect with me!
+          Connect with me on {{ bubbleMessage }} !
         </p>
         <br/>
         <ul class="links">
@@ -537,48 +539,15 @@
 
         <li class="roles" style="text-align: left;">
 
-            <h4 style="letter-spacing: 2px;">
-                <b>Algorithms</b>
-            </h4>
-            <hr class="divider"/>
-
-            <p>CSE 2331: Data Structures and Algorithms</p>
-            <p>CSE 2321: Discrete Mathematics and Structures</p>
-            <p>STAT 3470: Introduction to Probability and Statistics for Engineers</p>
-
-
-
-
-            <h4 style="letter-spacing: 2px;">
-                <b>Programming</b>
-            </h4>
-            <hr class="divider"/>
-
-            <p>CSE 3901: Project: Design, Development & Documentation of Web Applications</p>
-            <p>CSE 2421: Introduction to Low-Level Programming & Computer Organization</p>
-            <p>CSE 2231: Software Development and Design</p>
-            <p>CSE 2221: Software Components</p>
-
-
-            <h4 style="letter-spacing: 2px;">
-                <b>Engineering</b>
-            </h4>
-            <hr class="divider"/>
-            <p>ENGR 2367: American Attitudes About Technology</p>
-            <p>ENGR 1282H: Fundamentals of Engineering for Honors 2</p>
-            <p>ENGR 1281H: Fundamentals of Engineering for Honors 1</p>
-
-
-
-            <h4 style="letter-spacing: 2px;">
-                <b>Hardware</b>
-            </h4>
-            <hr class="divider"/>
-
-            <p>CSE 2431: Introduction to Operating Systems</p>
-            <p>ECE 2060: Introduction to Digital Logic</p>
-
-   
+            <div ng-repeat="courses in courseList">
+              <h4 style="letter-spacing: 2px;">
+                <b>{{ findCategory(courseList, courses) }}</b>
+              </h4>
+              <hr class="divider"/>
+              <p ng-repeat="course in courses">
+                {{ course }}
+              </p>
+            </div>
         </li>
         <!--
 
@@ -617,6 +586,7 @@
   </div>
 </body>
 <script src="script.js"></script>
+<script scr="app.js"></script>
 
 
 </html>
