@@ -1,0 +1,25 @@
+.body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #2196F3;
+  padding: 10px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.body div {
+    background-color: rgba(213, 211, 250, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 3px;
+  font-size: 1.5vw;
+  text-align: center;
+  
+  width: 100%;
+}
+
+.body p {
+    color:rgba(0, 0, 0, 0.8);
+    width: 500px;
+    word-wrap: break-word;
+}
+

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-US" ng-app="myApp2" ng-controller="mainController2">
+<html lang="en-US" ng-app="ToDoList" ng-controller="ToDoListController">
   
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <title>Jay Shin</title>
   <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="bubble.css"/>  
+  <link rel="stylesheet" type="text/css" href="todolist.css"/>  
   <script src="https://code.angularjs.org/1.3.0-rc.1/angular.js"></script>
   <script src="https://code.angularjs.org/1.3.0-rc.1/angular-messages.min.js"></script>
   <meta name="viewport" content="width=1000">
@@ -23,40 +23,37 @@
       </div>
     </div>
     
+    <h3 style="text-align: center; margin-top:-20px;">{{ toDoListName }}</h3>
+    <div class="body">
+        <div>
+            <form ng-submit="add(newToDoContent)">
+                <input type="text" placeholder="Enter a to-do item!" ng-model="newToDoContent">
+                <button type="submit">Submit</button>
+            </form>
     
-      <form ng-submit="add(newToDoContent)">
-      <input type="text" placeholder="Enter a to-do item!" ng-model="newToDoContent">
-      <button type="submit">Submit</button>
-    </form>
-    <div>
-        <button ng-click="filter={}">All</button>
-        <button ng-click="filter={completed: false}">Uncompleted</button>
-        <button ng-click="filter={completed: true}">Completed</button>
-       
+            <div ng-repeat="todo in todos | filter: filter | orderBy: orderBy">
+                <p><input type="checkbox" ng-model="todo.completed">
+                {{ todo.content }}
+                <button ng-click="remove(todo)">Delete</button></p>
+            </div>
+        </div>
+        
+        <div>
+            <div>
+                <button ng-style="allButton" ng-click="filter={}; allPressed(this)">All</button>
+                <button ng-style="ucButton" ng-click="filter={completed: false}; ucPressed(this)">Uncompleted</button>
+                <button ng-style="cButton" ng-click="filter={completed: true}; cPressed(this)">Completed</button>   
+            </div>
+            
+            <div>
+              <button ng-style="oFirst" ng-click="orderBy='createdAt'; oFirstPressed(this)">Oldest First</button><br>
+              <button ng-style="nFirst" ng-click="orderBy='-createdAt'; nFirstPressed(this)">Newest First</button><br>
+              <button ng-style="alphab" ng-click="orderBy='content'; alphabPressed(this)">Alphabetical</button><br>
+              <button ng-style="rAlphab" ng-click="orderBy='-content'; rAlphabPressed(this)">Reverse-Alphabetical</button>   
+            </div>
+        </div>
     </div>
-    
-    <div>
-      <button ng-click="orderBy='createdAt'">Oldest First</button>
-      <button ng-click="orderBy='-createdAt'">Newest First</button>
-    </div>
-    <div>
-      <button ng-click="orderBy=''">No Effect</button>
-      <button ng-click="orderBy='content'">Alphabetical</button>
-      <button ng-click="orderBy='-content'">Reverse-Alphabetical</button>
-       
-    </div>
-
-
-    <div ng-repeat="todo in todos | filter: filter | orderBy: orderBy">
-        <input type="checkbox" ng-model="todo.completed">
-        <input type="text" placeholder="{{ todo.content }}" readonly>
-        <button ng-click="remove(todo)">Delete</button>
-    </div>
-    
-    
-   
-    
-    
     
 </body>
+<script src="todolist.js"></script>
 </html>
