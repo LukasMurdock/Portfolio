@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="myApp2" ng-controller="mainController2">
+  
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Jay Shin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="bubble.css"/>  
+  <script src="https://code.angularjs.org/1.3.0-rc.1/angular.js"></script>
+  <script src="https://code.angularjs.org/1.3.0-rc.1/angular-messages.min.js"></script>
+  <meta name="viewport" content="width=1000">
+</head>
+
+<body>
+    <div class="nav-container" id="begin-sec">
+      <div class="nav">
+      </div>
+      <div class="nav">
+        <a href="index.html"><img class="main-logo" src="sources/shin-jay.png"/></a>
+      </div>
+      <div class="nav">
+      </div>
+    </div>
+    
+    
+      <form ng-submit="add(newToDoContent)">
+      <input type="text" placeholder="Enter a to-do item!" ng-model="newToDoContent">
+      <button type="submit">Submit</button>
+    </form>
+    <div>
+        <button ng-click="filter={}">All</button>
+        <button ng-click="filter={completed: false}">Uncompleted</button>
+        <button ng-click="filter={completed: true}">Completed</button>
+       
+    </div>
+    
+    <div>
+      <button ng-click="orderBy='createdAt'">Oldest First</button>
+      <button ng-click="orderBy='-createdAt'">Newest First</button>
+    </div>
+    <div>
+      <button ng-click="orderBy=''">No Effect</button>
+      <button ng-click="orderBy='content'">Alphabetical</button>
+      <button ng-click="orderBy='-content'">Reverse-Alphabetical</button>
+       
+    </div>
+
+
+    <div ng-repeat="todo in todos | filter: filter | orderBy: orderBy">
+        <input type="checkbox" ng-model="todo.completed">
+        <input type="text" placeholder="{{ todo.content }}" readonly>
+        <button ng-click="remove(todo)">Delete</button>
+    </div>
+    
+    
+   
+    
+    
+    
+</body>
+</html>

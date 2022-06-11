@@ -30,7 +30,7 @@
   <div style="margin-top:0px;" class="contact-body">
     <div class="profile">
         <br/>
-
+      <img src="{{ profilePicture }}"/>
       <img class="headshot" src="shay.png"/>
       <p><b>Jay Shin</b></p>
       <p>{{ job }}</p>
@@ -533,60 +533,28 @@
 <!---
 -->
 <div style="margin-left: -3vw;" class="skill-body" id="course-sec">
-  
-    <ul>
-        <h3 class="title">Coursework</h3>
+  <ul>
+    <h3 class="title">Coursework</h3>
+    <li class="roles" style="text-align: left;">
+      <div ng-repeat="courses in courseList">
+        <h4 style="letter-spacing: 2px;">
+          <b>{{ findCategory(courseList, courses) }}</b>
+        </h4>
+        <hr class="divider"/>
+        <p ng-repeat="course in courses">
+          {{ course }}
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
 
-        <li class="roles" style="text-align: left;">
-
-            <div ng-repeat="courses in courseList">
-              <h4 style="letter-spacing: 2px;">
-                <b>{{ findCategory(courseList, courses) }}</b>
-              </h4>
-              <hr class="divider"/>
-              <p ng-repeat="course in courses">
-                {{ course }}
-              </p>
-            </div>
-        </li>
-        <!--
-
-        <h3  class="title">Certificates</h3>
-        <hr class="title-divider"/>
-
-        <li class="roles">
-            <p style="letter-spacing: 2px;" class="category"><b>LinkedIn Learning - Become an iOS 13 App Developer</b></p>
-            <hr class="divider"/>
-            <p>
-                ∘ Swift 5 Essential Training
-            </p>
-            <p>
-                ∘ XCode 12 Essential Training
-            </p>
-            <p>
-                ∘ iOS App Development: Essential Courses
-            </p>
-            <p>
-                ∘ Building Your First iOS 13 App
-            </p>
-            <p>
-                ∘ iOS 14 Development Essential Training
-            </p>
-        </li>
-
-        -->
-    </ul>
+<div class="nav-container">
+  <div class="nav">
+    <a onclick="func('begin-sec')"><img class="main-logo" src="sources/shin-jay.png"/></a>
   </div>
-  <div class="nav-container">
-
-    <div class="nav">
-      <a onclick="func('begin-sec')"><img class="main-logo" src="sources/shin-jay.png"/></a>
-    </div>
-
-  </div>
+</div>
 </body>
 <script src="script.js"></script>
 <script scr="app.js"></script>
-
-
 </html>

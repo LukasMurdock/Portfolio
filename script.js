@@ -30,6 +30,11 @@ function($scope, $interval) {
     $scope.findCategory = function(object, value) {
         return Object.keys(object).find(key => object[key] === value);
     };
+    
+
+    $scope.profilePicture = new Image(100, 100);
+    $scope.profilePicture.src = "shay.png";
+    console.log($scope.profilePicture);
 
     var index = 0;
     $interval(function changeJob() {
@@ -58,9 +63,3 @@ function func(section) {
     element.scrollIntoView({behavior: "smooth"});
 }
 
-
-// gets the whole function as string
-console.log(x.toString());
-
-// gets parameter
-console.log(angular.injector().annotate(x));
