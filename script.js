@@ -6,10 +6,10 @@ var courseList = {
     Algorhithms: 
     ["CSE 2331: Data Structures and Algorithms",
     "CSE 2321: Discrete Mathematics and Structures",
-    "STAT 3470: Introduction to Probability and Statistics for Engineers"], 
+    "STAT 3470: Probability and Statistics for Engineers"], 
     Programming: 
-    ["CSE 3901: Project: Design, Development & Documentation of Web Applications",
-    "CSE 2421: Introduction to Low-Level Programming & Computer Organization",
+    ["CSE 3901: Design, Development, and Documentation of Web Applications",
+    "CSE 2421: Low-Level Programming and Computer Organization",
     "CSE 2231: Software Development and Design",
     "CSE 2221: Software Components"],
     Engineering:
@@ -17,8 +17,8 @@ var courseList = {
     "ENGR 1282H: Fundamentals of Engineering for Honors 2",
     "ENGR 1281H: Fundamentals of Engineering for Honors 1"],
     Hardware: 
-    ["CSE 2431: Introduction to Operating Systems",
-    "ECE 2060: Introduction to Digital Logic"]
+    ["CSE 2431: Operating Systems",
+    "ECE 2060: Digital Logic"]
 };
 
 myApp.controller('mainController', ['$scope', '$interval',
