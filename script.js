@@ -1,6 +1,7 @@
 var myApp = angular.module("myApp", ['ngMessages']);
 
-var myJobs = ["Software Developer", "Full-Stack Web Developer", "iOS App Developer", "Game Developer"];
+var myJobs = ["Software Engineer", "Full-Stack Web Developer", "iOS App Developer", "Game Developer"];
+var myPics = ["shay.png", "shay2.png", "shay3.png", "shay4.png"];
 var bubbleMessages = ["GitHub", "LinkedIn", "Instagram", "SoundCloud"];
 var courseList = {
     Algorhithms: 
@@ -33,7 +34,7 @@ function($scope, $interval) {
     
 
     $scope.profilePicture = new Image(100, 100);
-    $scope.profilePicture.src = "shay.png";
+    $scope.profilePicture = "shay.png";
     console.log($scope.profilePicture);
 
     var index = 0;
@@ -47,6 +48,18 @@ function($scope, $interval) {
         $scope.job = "Aspiring " + myJobs[index];
     }, 1300);
 
+    var picIndex = 0;
+    $interval(function changePic() {
+        picIndex++;
+
+        if (picIndex == myPics.length) {
+            picIndex = 0;
+        }
+
+        $scope.profilePicture = myPics[picIndex];
+        console.log(myPics[picIndex]);
+    }, 1300);
+
     $interval(function changeBubbleMessage() {
         index++;
 
@@ -56,6 +69,7 @@ function($scope, $interval) {
 
         $scope.bubbleMessage = bubbleMessages[index];
     }, 1800);
+
 }]);
 
 function func(section) {

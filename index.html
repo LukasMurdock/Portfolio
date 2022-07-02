@@ -30,25 +30,11 @@
   <div style="margin-top:0px;" class="contact-body">
     <div class="profile">
         <br/>
-      <img class="headshot" src="shay.png"/>
+      <img class="headshot" src="{{ profilePicture }}"/>
       <p><b>Jay Shin</b></p>
       <p>{{ job }}</p>
       <p>OSU '24</p>
-    </div>
-    <div class="profile2">
-      <p>
-        Hello, my name is Jay Shin. I am currently a 2nd-year Land Grant Scholar at <a href="https://www.osu.edu/">The Ohio State University</a>.
-            I am studying <a href="https://cse.osu.edu/">Computer Science and Engineering</a> for a Bachelor's Degree.
-            <br/><br/> 
-            My education at Ohio State has included a rigorious mathematical background with in depth design experience. At Ohio State, I work as a 
-            Teaching Assistant for an Intro Python Programming course. Outside of school, I enjoy hanging out with friends,
-            composing music, freestyle rapping, playing the guitar, and playing OverWatch and KartRider Rush+.  
-      </p>
-        <p class="bubble" style="margin-bottom:0px;" >
-          Connect with me on {{ bubbleMessage }} !
-        </p>
-        <br/>
-        <ul class="links">
+      <ul class="links" style="margin-top: 10px;">
         <li class="image-smaller">
           <a target="_blank" href="https://www.linkedin.com/in/jay-shin-012724230/">
             <img src="sources/linkedin.png"/>
@@ -70,6 +56,21 @@
           </a>
         </li>
       </ul>
+    </div>
+    <div class="profile2">
+            <!---
+      <p>
+        Hello, my name is Jay Shin. I am currently a 2nd-year Land Grant Scholar at <a href="https://www.osu.edu/">The Ohio State University</a>, 
+            studying <a href="https://cse.osu.edu/">Computer Science and Engineering</a> for a Bachelor's Degree.
+            <br/><br/> 
+            My education at Ohio State has included a rigorious mathematical background with in depth design experience. At Ohio State, I work as a 
+            Teaching Assistant for an Intro Python Programming course. Outside of school, I enjoy hanging out with friends,
+            composing music, freestyle rapping, playing fingerstyle guitar, and playing Overwatch and KartRider Rush+.  
+      </p>
+        <p class="bubble" style="margin-bottom:0px;" >
+          Connect with me on {{ bubbleMessage }} !
+        </p>
+      -->
     </div>
   </div>
 <br/>
@@ -245,6 +246,7 @@
             <br/><br/>
 
             <b>Description: </b><br/>
+            • A semester long project for ENGR 1282H                        <br/>
             • A virtual escape room created w/ Ardunio & SOLIDWORKS. <br/>
             • Wrote a written report and presented to 50+ audiences.
             <br/>
@@ -294,6 +296,8 @@
               <b>Description: </b>
               
               <br/>
+              • ENGR 1281H Software Development Final Project
+              <br/>
               • A simple C++ video game created with Ohio State's Proteous Simulator that prompts users to repeat completely random patterns shown on 6 rectangles.
               <br/>
               • Collaborated with JPMC's IB Fellow, Alberto Casas.
@@ -318,7 +322,7 @@
     </ul>
   </div>
   
-  <h3 class="title" id="ex-sec">Experiences & Education</h3>
+  <h3 class="title" id="ex-sec">Experiences</h3>
   <div class="resume-body">
     <ul>
       <div class="job-teul">
@@ -342,10 +346,10 @@
             <hr class="divider"/>
             
             <div class="roles">
-              <p>∘ Working as a part of an Agile development team with software engineers.</p>
-              <p>∘ Developing features within Sunquest's VUE web application.</p>
+              <p>∘ Working as a part of an Agile development team with a group of SWE's.</p>
+              <p>∘ Developing features within Sunquest's <a href="https://www.sunquestinfo.com/software-and-services/vue/">VUE</a> web application.</p>
               <p>∘ Developing REST APIs for VUE to communicate with outside companies.</p>
-              <p>∘ Tools: C#, AngularJS, SQL, and Azure DevOps </p>
+              <p>∘ Tools: C#, .NET, AngularJS, SQL, and Azure DevOps </p>
             </div>
         </li>
       </div>
@@ -369,11 +373,11 @@
             <hr class="divider"/>
 
             <div class="roles">
-                <p>∘ Assisted frontend developers on 20+ projects using HTML and CSS. </p>
+                <p>∘ Assisted frontend developers on 20+ projects, mainly using HTML and CSS. </p>
                 <p>∘ Implemented and revised web pages while meeting customers' demands. </p>
                 <p>∘ Analyzed and debugged errors in the company's codebase. </p>
                 <p>∘ Updated the portfolio in the <a href="https://www.robintek.com">company website</a> on a regular basis.</p>
-                <p>∘ Communicated effectively with co-workers via email. </p>
+                <p>∘ Learned and practiced real-life application of web development processes.</p>
             </div>
         </li>
         </div>
@@ -406,33 +410,6 @@
           </div>
         </li>
         </div>
-        
-        <div class="job-teul">
-        <li>
-          <img class="company-pic" src="sources/osu.png"/><br/>
-          <a class="job-title" href="https://www.osu.edu/">
-              <span style="letter-spacing: 2px; color: #9595ca;">
-                  The Ohio State University
-              </span>
-          </a>
-  
-          <br/>
-  
-          <img src="sources/job.png"/>
-          <span class="job-place">Sophomore</span> 
-          <img src="sources/calendar.png"/>
-          <p class="date">August 2020 - May 2024</p>
-          
-          <br/>        
-          <hr class="divider"/>
-  
-          <div class="roles">
-              <p>∘ Major: Computer Science and Engineering </p>
-              <p>∘ <a href="http://undergrad.osu.edu/cost-and-aid/merit-based-scholarships">Land Grant Scholarship</a> (Full Cost of Attendence)</p>
-              </p>
-          </div>
-      </li>
-      </div>
 
       
       </ul>
@@ -440,10 +417,9 @@
 <br/>
 <div class="skill-body" id="skill-sec">
     <ul>
-      <h3 class="title" style="margin-bottom:-10px;">Skills</h3>
+      <h3 class="title" style="margin-bottom:0px; margin-left: -10px;">Skills</h3>
       <li class="roles">
           <div class="skill-cont">
-                <h4 class="skill-title" style="margin-top:3vw;">Programming</h3>
                 <div>
                   <ul class="langs">
                     <li>
@@ -467,28 +443,12 @@
                       <p>Ruby</p>
                       <p><progress value="40" max="100"></progress></p>
                     </li>
-                    <li>
-                      <img src="sources/cpp.png"/><br/>
-                      <p>C++</p>
-                      <p><progress value="40" max="100"></progress></p>
-                    </li>
-                    <li>
-                      <img src="sources/c.png"/><br/>
-                      <p>C</p>
-                      <p><progress value="30" max="100"></progress></p>
-                    </li>
-                    <li>
-                      <img src="sources/assembly.png"/><br/>
-                      <p>Assembly</p>
-                      <p><progress value="20" max="100"></progress></p>
-                    </li>
                     
                     
                   </ul>
                 </div>
                 <br/>
             <div>
-              <h4 class="skill-title">Web Development</h4>
               <ul class="langs">
                 <li>
                   <img src="sources/js.png"/><br/>
@@ -538,7 +498,36 @@
 -->
 <div style="margin-left: -3vw;" class="skill-body" id="course-sec">
   <ul>
-    <h3 class="title">Coursework</h3>
+    <h3 class="title" style="margin-left: 0px;margin-bottom: 0px;">Education</h3>
+    <div class="resume-body">
+      <div class="job-teul" style="margin-left:0px;">
+        <li>
+          <img class="company-pic" src="sources/osu.png"/><br/>
+          <a class="job-title" href="https://www.osu.edu/">
+              <span style="letter-spacing: 2px; font-size: 13px;color: #9595ca;">
+                  The Ohio State University
+              </span>
+          </a>
+  
+          <br/>
+  
+          <img src="sources/job.png"/>
+          <span class="job-place" style="font-size: 10px">Sophomore</span> 
+          <img src="sources/calendar.png"/>
+          <p class="date">August 2020 - May 2024</p>
+          
+          <br/>        
+          <hr class="divider"/>
+  
+          <div class="roles">
+              <p>∘ Major: Computer Science and Engineering </p>
+              <p>∘ <a href="http://undergrad.osu.edu/cost-and-aid/merit-based-scholarships">Land Grant Scholarship</a> (Full Cost of Attendence)</p>
+              </p>
+          </div>
+      </li>
+      </div>
+    </div>
+    
     <li class="roles" style="text-align: left;">
       <div ng-repeat="courses in courseList">
         <h4 style="letter-spacing: 1px; font-family: 'Kdam Thmor Pro', sans-serif;">
@@ -553,7 +542,7 @@
   </ul>
 </div>
 
-<div class="nav-container">
+<div class="nav-container" style="margin-top:-40px;">
   <div class="nav">
     <a onclick="func('begin-sec')"><img class="main-logo" src="sources/shin-jay.png"/></a>
   </div>

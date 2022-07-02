@@ -100,8 +100,8 @@ a {
 }
 
 .image-smaller img {
-  width: 3vw !important;
-    height: 3vw !important;
+  width: 30px !important;
+    height: 30px !important;
 
     margin-left: 0;
     margin-right: 0;
@@ -178,17 +178,17 @@ body {
 
 .headshot {
     width: 22vw;
-    height: auto;
+    height: 22vw;
 
 }
 
 .teul {
-  border: 5px solid rgba(209, 209, 209, 0.829);
+  border: 5px solid #5e5eb1;
 }
 
 .links img {
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
 }
 .links {
   margin-right: 38px;
@@ -204,16 +204,15 @@ body {
  .contact-body {
     text-align: center;
     width: 100%;
+    margin-top: -50px;
  }
 
  .contact-body .profile {
-  display:inline-block;  
-  text-align: left;
     
  }
 
  .contact-body .profile p {
-  font-size: 0.8vw;
+  font-size: 8px;
   text-align: center;
     
  }
@@ -225,13 +224,15 @@ body {
 
  .contact-body .profile2 {
   margin-top:20px;
-  margin-left: 20px;
-  display:inline-block;  
-  text-align: left;
-  width: 30%;
-  font-size: 1vw;
+  margin-left: auto;
+ 
+margin-right: auto;
+  width: 60%;
+  font-size: 10px;
     
  }
+
+ 
  .contact-body h3 {
      text-align: center;
  }
@@ -309,6 +310,20 @@ body {
     font-size: 13px;
     word-spacing: 1px;
     
+}
+
+@media screen and (max-width: 402px) {
+  .roles p {
+    font-size: 2.3vw;
+  }
+
+  .divider {
+    width: 70vw;
+  }
+
+  .job-teul {
+    margin-left: -30vw;
+  }
 }
 
 .roles h4 {
@@ -470,7 +485,7 @@ progress {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(230, 230, 230, 0.877);
+    background: rgba(150, 116, 161, 0.877);
     color: black;
     visibility: hidden;
     opacity: 0;
@@ -757,6 +772,27 @@ margin-bottom: -10px;
   display:inline-block;
   margin: 0 auto;
   text-align: center;
+}
+
+.langs img {
+  width: 30px;
+  height: 30px;
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .langs li {
+    margin-left: 1px;
+  }
+  .langs img {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .langs p {
+    font-size: 2vw;
+  }
 }
 
 .langs li {
