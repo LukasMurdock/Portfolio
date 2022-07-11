@@ -4,11 +4,11 @@ var myJobs = ["Software Engineer", "Full-Stack Web Developer", "iOS App Develope
 var myPics = ["shay.png", "shay2.png", "shay3.png", "shay4.png"];
 var bubbleMessages = ["GitHub", "LinkedIn", "Instagram", "SoundCloud"];
 var courseList = {
-    Algorhithms: 
+    Logic: 
     ["CSE 2331: Data Structures and Algorithms",
     "CSE 2321: Discrete Mathematics and Structures",
     "STAT 3470: Probability and Statistics for Engineers"], 
-    Programming: 
+    Coding: 
     ["CSE 3901: Design, Development, and Documentation of Web Applications",
     "CSE 2421: Low-Level Programming and Computer Organization",
     "CSE 2231: Software Development and Design",
