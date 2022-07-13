@@ -10,15 +10,15 @@ var courseList = {
     "STAT 3470: Probability and Statistics for Engineers"], 
     Coding: 
     ["CSE 3901: Design, Development, and Documentation of Web Applications",
-    "CSE 2421: Low-Level Programming and Computer Organization",
     "CSE 2231: Software Development and Design",
     "CSE 2221: Software Components"],
     Engineering:
     ["ENGR 2367: American Attitudes About Technology",
     "ENGR 1282H: Fundamentals of Engineering for Honors 2",
-    "ENGR 1281H: Fundamentals of Engineering for Honors 1"],
-    Hardware: 
+    "ENGR 1281H: Fundamentals of Engineering for Honors 1", "MATH 1172: Engineering Calculus 2"],
+    Systems: 
     ["CSE 2431: Operating Systems",
+    "CSE 2421: Low-Level Programming and Computer Organization",
     "ECE 2060: Digital Logic"]
 };
 
