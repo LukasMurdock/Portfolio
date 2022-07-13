@@ -50,11 +50,16 @@ a {
   }
   .nav a {
     display: block;
-    padding: 2vw;
+    padding: 25px;
     text-decoration: none;
     color:#C4C4C5;
     font-weight: 800;
-    font-size: 30vw;
+  }
+
+  @media screen and (max-width: 550px) {
+    .nav a{
+      padding: 3vw;
+    }
   }
   .nav a,
   .nav a:after,
@@ -175,11 +180,11 @@ body {
 
 .headshot {
   margin-top:-10px;
-  width: 700px;
+  width: 850px;
   height: auto;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   .headshot {
     margin-top:-10px;
     width: 100vw;
@@ -217,7 +222,7 @@ body {
  }
  
  .contact-body .profile p {
-  font-size: 8px;
+  font-size: 15px;
   text-align: center;
   
  }
@@ -229,39 +234,30 @@ body {
  }
 
 
-.resume-body {
+ .resume-body {
+
 
 }
-
-.resume-body ul {
-
-
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));
-  list-style: none;
-  
+.resume-body ul{
+display: block;
+width: 100%;
+margin-left: 0px;
+margin-right: 0px;
 }
 
 .resume-body li {
-  display: inline-block;
-  flex-flow: row wrap;
-  justify-content: center;
-  text-align: left;
-  font-size: 10px;
-  
-}
-
-.job-teul {
-  margin-bottom:30px;
-  text-align: center;
-  margin-left: -50px;
+text-align: left;
+display: inline-block;
+margin-bottom: 30px;
+margin-top:5px;
+margin: 10px 10px;
 }
 
 
 
 
  .resume-body img {
-     width: 1vw;
+     width: 10px;
  }
 
  .resume-body a {
@@ -277,10 +273,10 @@ body {
 }
 
  .divider {
-    width: 420px;
+    width: 435px;
     margin-left: 0px;
     margin-top:5px;
-    color: red;
+    background-color: rgb(47, 107, 160);
     margin-bottom: 5px;
 }
 
@@ -332,7 +328,8 @@ body {
 }
 
 .title {
-  margin-top:10px;
+  margin-top:20px;
+  margin-bottom: -10px;
     font-size: 25px;
     text-align: center;
     display: block;
@@ -383,19 +380,11 @@ body {
 .ls {
   margin-left:0px;
 }
-.skills li {
-    float: left;
-    width: 10vw;
-}
-
-.skills p{
-    margin-right: 0px;
-}
 
 progress {
-    width: 5vw;
-    height: 0.7em;
-    border-radius: 10px; 
+  width: 5vw;
+  height: 0.25em;
+  border-radius: 10px; 
 }
 
 
@@ -762,6 +751,11 @@ margin-bottom: -10px;
   display:inline-block;
   margin: 0 auto;
   text-align: center;
+
+}
+
+.langs p {
+  font-size: 10px;
 }
 
 .langs img {
@@ -771,18 +765,18 @@ margin-bottom: -10px;
 }
 
 @media screen and (max-width: 600px) {
-
   .langs li {
-    margin-left: 1px;
+    margin-left: 10px;
   }
   .langs img {
-    width: 5vw;
-    height: 5vw;
+    width:6vw;
+    height: 6vw;
   }
 
   .langs p {
-    font-size: 5px;
+    font-size:1.5vw;
   }
+
 }
 
 .langs li {
