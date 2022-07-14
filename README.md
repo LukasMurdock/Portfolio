@@ -8,6 +8,7 @@
 - AngularJS
 - Git
 - Visual Studio Code
-
+## Contributors
+- Jay Shin (shin.810@osu.edu)
 ## Link
 - https://www.shay.live
