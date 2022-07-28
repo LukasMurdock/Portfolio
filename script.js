@@ -4,22 +4,23 @@ var myJobs = ["Software Engineer", "Full-Stack Web Developer", "iOS App Develope
 var myPics = ["shay.png", "shay2.png", "shay3.png", "shay4.png"];
 var bubbleMessages = ["GitHub", "LinkedIn", "Instagram", "SoundCloud"];
 var courseList = {
-    Logic: 
-    ["CSE 2331: Data Structures and Algorithms",
-    "CSE 2321: Discrete Mathematics and Structures",
-    "STAT 3470: Probability and Statistics for Engineers"], 
-    Coding: 
-    ["CSE 3901: Design, Development, and Documentation of Web Applications",
+    "1. Computer": 
+    [
+    "CSE 3901: Design, Development, and Documentation of Web Applications",
     "CSE 2231: Software Development and Design",
-    "CSE 2221: Software Components"],
-    Engineering:
-    ["ENGR 2367: American Attitudes About Technology",
-    "ENGR 1282H: Fundamentals of Engineering for Honors 2",
-    "ENGR 1281H: Fundamentals of Engineering for Honors 1", "MATH 1172: Engineering Calculus 2"],
-    Systems: 
-    ["CSE 2431: Operating Systems",
-    "CSE 2421: Low-Level Programming and Computer Organization",
-    "ECE 2060: Digital Logic"]
+    "CSE 2221: Software Components"], 
+    "2. Science": 
+    ["CSE 2331: Data Structures and Algorithms",
+    "CSE 2321: Discrete Mathematics and Structures"],
+    "3. And":
+    ["STAT 3470: Probability and Statistics for Engineers",
+    "MATH 1172: Calculus II + III"],
+    "4. Engineering": 
+    ["CSE 2431: Systems II - Operating Systems",
+    "CSE 2421: Systems I - Low-Level Programming and Computer Organization",
+    "ECE 2060: Digital Logic",
+    "ENGR 1282H: Fundamentals of Engineering for Honors II",
+    "ENGR 1281H: Fundamentals of Engineering for Honors I", ]
 };
 
 myApp.controller('mainController', ['$scope', '$interval',
