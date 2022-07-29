@@ -7,6 +7,7 @@ var courseList = {
     "1. Computer": 
     [
     "CSE 3901: Design, Development, and Documentation of Web Applications",
+    "CSE 2421: Low-Level Programming and Computer Organization",
     "CSE 2231: Software Development and Design",
     "CSE 2221: Software Components"], 
     "2. Science": 
@@ -14,10 +15,9 @@ var courseList = {
     "CSE 2321: Discrete Mathematics and Structures"],
     "3. And":
     ["STAT 3470: Probability and Statistics for Engineers",
-    "MATH 1172: Calculus II + III"],
+    "MATH 1172: Calculus II & III"],
     "4. Engineering": 
-    ["CSE 2431: Systems II - Operating Systems",
-    "CSE 2421: Systems I - Low-Level Programming and Computer Organization",
+    ["CSE 2431: Operating Systems",
     "ECE 2060: Digital Logic",
     "ENGR 1282H: Fundamentals of Engineering for Honors II",
     "ENGR 1281H: Fundamentals of Engineering for Honors I", ]
