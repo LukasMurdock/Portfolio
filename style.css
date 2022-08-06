@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gudea&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
 
 html {
   font-family: 'Gudea', sans-serif;
@@ -128,7 +129,6 @@ body {
 
 .nav-container {
   text-align: center;
-  position: sticky;
    top: 0;
    z-index: 100;
    background-color: rgb(40, 41, 44);
@@ -141,6 +141,22 @@ body {
     visibility: hidden;
   }
 }
+
+.tools  {
+  text-align: center;
+  display: inline-block;
+  padding-right: 4.5px;
+  padding-left: 4.5px;
+  padding-top:0px;
+  padding-bottom:0px;
+  margin-top:0px;
+  margin-bottom: 0px;
+  background-color: #40405a;
+  border-radius: 3px;
+  color:rgb(195, 201, 227);
+  
+}
+
 
 
 .main-logo {
@@ -208,6 +224,7 @@ body {
 
 .teul {
   border: 5px solid #5e5eb1;
+  border-radius: 7px;
 }
 
 .links img {
@@ -349,11 +366,12 @@ margin-right: 20px;
 .title {
   margin-top:20px;
   margin-bottom: -10px;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
+    letter-spacing: 1px;
     display: block;
-    font-family: 'Tourney', cursive;
-    color:#eee;
+    font-family: 'Mouse Memoirs', sans-serif;
+    color:rgb(91, 91, 117);
 }
 
 .sub-title {
