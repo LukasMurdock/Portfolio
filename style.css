@@ -129,14 +129,16 @@ body {
 
 .nav-container {
   text-align: center;
-   top: 0;
-   z-index: 100;
    background-color: rgb(40, 41, 44);
-   border: 1px solid rgb(54, 63, 84);
+   border: 1px solid rgb(54, 60, 75);
+   border-radius: 10px;
+width: 95%;
+margin: 0 auto;
+margin-top:10px;
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .nav-container #hid-nav {
     visibility: hidden;
   }
@@ -169,10 +171,10 @@ body {
 .nav{
     overflow: hidden;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: -10px;
+    margin-top: 0px;
+    margin-bottom: -8px;
     display: inline-block;
-
+  
 }
 
 
