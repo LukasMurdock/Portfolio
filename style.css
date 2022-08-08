@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gudea&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@350&display=swap');
 
 html {
-  font-family: 'Gudea', sans-serif;
+  font-family: 'Raleway', sans-serif;
     color: #C4C4C5;
-    
     font-size: 100%;
   width: 100%;
   height: 100%;
@@ -307,7 +307,7 @@ margin-right: 20px;
 }
 
  .divider {
-    width: 435px;
+    width: 475px;
     margin-left: 0px;
     margin-top:5px;
     background-color: rgb(47, 107, 160);
@@ -327,11 +327,12 @@ margin-right: 20px;
     margin-right: auto;
 }
 
+
+
 .roles p{
     margin: 0.2vw;
     font-size: 13px;
     word-spacing: 1px;
-    
 }
 
 @media screen and (max-width: 402px) {
@@ -368,12 +369,12 @@ margin-right: 20px;
 .title {
   margin-top:20px;
   margin-bottom: -10px;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     letter-spacing: 1px;
     display: block;
-    font-family: 'Mouse Memoirs', sans-serif;
-    color:rgb(91, 91, 117);
+    font-family: 'Koulen', cursive;
+    color:rgb(67, 67, 128);
 }
 
 .sub-title {
