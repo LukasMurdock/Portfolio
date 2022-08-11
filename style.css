@@ -510,7 +510,7 @@ progress {
     opacity: 0;
     transition: opacity .2s, visibility .2s;
     text-align: left;
-    font-size: 10px;
+    font-size: 8.5px;
   }
   
   .img__wrap:hover .img__description {
