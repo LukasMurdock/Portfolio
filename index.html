@@ -6,42 +6,44 @@
   <link rel="stylesheet" href="style.css">
   <title>Jay Shin</title>
   <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="bubble.css"/>  
+  <!-- <link rel="stylesheet" href="bubble.css"/> -->
   <script src="https://code.angularjs.org/1.3.0-rc.1/angular.js"></script>
   <script src="https://code.angularjs.org/1.3.0-rc.1/angular-messages.min.js"></script>
     <meta name="viewport" content="width=device-width; initial-scale=1.0;">
 </head>
 
 <body>
-  <div class="nav-container" id="begin-sec">
+  <div class="nav-container">
     <div class="nav" id="hid-nav">
-      <a onclick="func('proj-sec')"><span>💻</span></a>
-      <a onclick="func('ex-sec')"><span>🛠️</span></a>
+      <a href="#proj-sec"><span>💻</span>Projects</a>
+      <a href="#ex-sec"><span>🛠️</span>Experiences</a>
     </div>
     <div class="nav">
-      <a onclick="func('begin-sec')"><img class="main-logo" src="sources/shin-jay.png"/></a>
+      <a href="#profile"><img class="main-logo" src="sources/shin-jay.png" alt="Jay Shin Signature"/></a>
     </div>
     <div class="nav" id="hid-nav">
-      <a onclick="func('skill-sec')"><span>🧠</span></a>
-      <a onclick="func('course-sec')"><span>🎓</span></a>
+      <a href="#skill-sec"><span>🧠</span>Skills</a>
+      <a href="#course-sec"><span>🎓</span>Courses  </a>
     </div>
   </div>
-  
+
   <div style="margin-top:0px;" class="contact-body">
-    <div class="profile">
+    <div class="profile" id="profile">
         <br/>
-      <img class="headshot" src="bitmoji.png"/>
+      <img class="headshot" src="bitmoji.png" alt="Jay Shin Bitmoji"/>
       <p style="color:#9797ab"><b>Jay Shin</b></p>
       <p>3rd Year Land Grant Scholar & Computer Science and Engineering @ Ohio State '24</p>
       <ul class="links" style="margin-top: 10px;">
         <li class="image-smaller">
           <a target="_blank" href="https://www.linkedin.com/in/jay-shin-012724230/">
-            <img src="sources/linkedin.png"/>
+            <img src="sources/linkedin.png" alt="LinkedIn" />
+            <span class="sr-only">LinkedIn</span>
           </a>
         </li>
         <li class="image-smaller">
           <a target="_blank" href="https://www.github.com/shayjin">
-            <img src="sources/github.png"/>
+            <img src="sources/github.png" alt="Github"/>
+            <span class="sr-only">Github</span>
           </a>
         </li>
         <!--
@@ -52,7 +54,8 @@
         </li>-->
         <li class="image-smaller">
           <a target="_blank" href="https://soundcloud.com/ercfminecraftboi">
-            <img src="sources/soundcloud.png"/>
+            <img src="sources/soundcloud.png" alt="Soundcloud"/>
+            <span class="sr-only">Soundcloud</span>
           </a>
         </li>
       </ul>
@@ -60,12 +63,12 @@
     <div class="profile2">
             <!---
       <p>
-        Hello, my name is Jay Shin. I am currently a 2nd-year Land Grant Scholar at <a href="https://www.osu.edu/">The Ohio State University</a>, 
+        Hello, my name is Jay Shin. I am currently a 2nd-year Land Grant Scholar at <a href="https://www.osu.edu/">The Ohio State University</a>,
             studying <a href="https://cse.osu.edu/">Computer Science and Engineering</a> for a Bachelor's Degree.
-            <br/><br/> 
-            My education at Ohio State has included a rigorious mathematical background with in depth design experience. At Ohio State, I work as a 
+            <br/><br/>
+            My education at Ohio State has included a rigorious mathematical background with in depth design experience. At Ohio State, I work as a
             Teaching Assistant for an Intro Python Programming course. Outside of school, I enjoy hanging out with friends,
-            composing music, freestyle rapping, playing fingerstyle guitar, and playing Overwatch and KartRider Rush+.  
+            composing music, freestyle rapping, playing fingerstyle guitar, and playing Overwatch and KartRider Rush+.
       </p>
         <p class="bubble" style="margin-bottom:0px;" >
           Connect with me on {{ bubbleMessage }} !
@@ -83,15 +86,15 @@
       <li>
         <b>
         <div class="img__wrap">
-          <img class="teul" src="sources/sa.png" />
+          <img class="teul" src="sources/sa.png" alt=""/>
           <p class="img__description"><br>
             <a target="_blank" href="SortingAlgorhithms.html" style="font-size: 1.3vw;">
               <b class="proj-title">🆕 Sorting Algorhithm Visualizer 🆕</b>
             </a><br>
-            Tools Used: 
-            <img src="sources/skills/js.png"/>
-            <img src="sources/skills/html.png"/>
-            <img src="sources/skills/css.png"/><br><br>
+            Tools Used:
+            <img src="sources/skills/js.png" alt="JS"/>
+            <img src="sources/skills/html.png" alt="HTML"/>
+            <img src="sources/skills/css.png" alt="CSS"/><br><br>
             <b style="font-family: 'Koulen', cursive; letter-spacing: 1px;">Description: </b><br/>
             • A sorting algorithm visualizer created ONLY with JavaScript.<br>
             • Developed algorithms to implement animations on a web browser.<br>
@@ -101,24 +104,24 @@
             - Quick Sort<br>
             - Insertion Sort<br>
             - Selection Sort<br><br>
-            <a target="_blank" href="SortingAlgorhithms.html"><img class="link" src="sources/link.png"></a><br>
-          </p>    
+            <a target="_blank" href="SortingAlgorhithms.html"><img class="link" src="sources/link.png" alt=""></a><br>
+          </p>
         </div>
         </b>
         Sorting Algorhithm Visualizer <br><br>
       </li>
-      
-      
+
+
       <li>
         <b>
         <div class="img__wrap">
-          <img class="teul" src="sources/ers.png" />
+          <img class="teul" src="sources/ers.png" alt=""/>
           <p class="img__description" ><br/>
             <a target="_blank" href="https://github.com/shayjin/egyption-rat-screw" style="font-size: 1.3vw;">
               <b class="proj-title">Egyptian Rat Screw 🃏</b>
             </a><br>
-            Tools Used: 
-            <img src="sources/skills/python.png"/><br/><br/>
+            Tools Used:
+            <img src="sources/skills/python.png" alt="Python"/><br/><br/>
             <b style="font-family: 'Koulen', cursive; letter-spacing: 1px;">Description: </b><br/>
             • Created ERS with Python's PyGame Framework.<br/>
             • Considered all possible cases of dealing, attacking, defending, slapping, incorrect slapping (100+ cases).<br/><br/>
@@ -128,8 +131,8 @@
             • Implemented a penalty to prevent slapping at wrong times.<br>
             • PC players have different skill levels.<br>
             • Developed an algorithm where PC players compete can against each other based on their skill levels to produce varying slap reaction times every time.<br/>
-            <a target="_blank" href="https://github.com/shayjin/ers"><img class="link" src="sources/link.png"></a><br/>
-          </p>        
+            <a target="_blank" href="https://github.com/shayjin/ers"><img class="link" src="sources/link.png" alt=""></a><br/>
+          </p>
         </div>
         </b>
         Egyptian Rat Screw <br><br>
@@ -138,17 +141,17 @@
       <li>
         <b>
         <div class="img__wrap">
-          <img class="teul" src="sources/gomoku.png" />
+          <img class="teul" src="sources/gomoku.png" alt=""/>
           <p class="img__description"><br>
 
             <a target="_blank" href="https://github.com/shayjin/python-gomoku" style="font-size: 1.3vw;">
               <b style="font-size: 15px;">Gomoku 🎴</b>
             </a><br>
 
-            
 
-            Tools Used: 
-            <img src="sources/skills/python.png"/>
+
+            Tools Used:
+            <img src="sources/skills/python.png" alt="Python"/>
 
             <br/><br/>
 
@@ -160,15 +163,15 @@
             • Implemented a 1P mode to play against PC and a 2P mode. <br/>
             • First player to have unbroken chain of 5 stones wins. <br/>
 
-            
+
             <br/>
             <a target="_blank" href="https://github.com/shayjin/python-gomoku">
-              <img class="link" src="sources/link.png">
+              <img class="link" src="sources/link.png" alt="">
             </a>
           </p>
         </div>
         </b>
-          Gomoku 
+          Gomoku
 
         <br/>
         <br/>
@@ -177,58 +180,58 @@
       <li>
         <b>
         <div class="img__wrap">
-          <img class="teul" src="sources/todolist.PNG" />
+          <img class="teul" src="sources/todolist.PNG" alt="" />
           <p class="img__description"><br>
             <a target="_blank" href="todolist.html" style="font-size: 1.3vw;">
               <b class="proj-title">Dynamic To-Do List 📝</b>
             </a><br>
-            Tools Used: 
-            <img src="sources/ajs.png"/>
-            <img src="sources/skills/js.png"/>
-            <img src="sources/skills/html.png"/>
-            <img src="sources/skills/css.png"/><br><br>
+            Tools Used:
+            <img src="sources/ajs.png" alt="AngularJS"/>
+            <img src="sources/skills/js.png" alt="JS"/>
+            <img src="sources/skills/html.png" alt="HTML"/>
+            <img src="sources/skills/css.png" alt="CSS"/><br><br>
             <b style="font-family: 'Koulen', cursive; letter-spacing: 1px;">Description: </b><br/>
             • A simple AngularJS to-do list app.<br>
             • Was created while practicing AngularJS for internship.<br><br>
-            <a target="_blank" href="todolist.html"><img class="link" src="sources/link.png"></a><br>
-          </p>    
+            <a target="_blank" href="todolist.html"><img class="link" src="sources/link.png" alt=""></a><br>
+          </p>
         </div>
       </b>
         Dynamic To-Do List <br><br>
       </li>
-     
+
     </ul>
   </div>
-  
+
   <h3 class="title" id="ex-sec">🛠️ Experiences 🛠️</h3>
   <div class="resume-body">
     <ul>
       <li>
-          <img class="company-pic" src="sources/sunquest-horizontal.png"/><br/>
+          <img class="company-pic" src="sources/sunquest-horizontal.png" alt="Sunquest Information Systems"/><br/>
 
             <a class="job-title" href="https://www.sunquestinfo.com/">
                 <span style="letter-spacing:1px; color: #9595ca;">
                     Sunquest Information Systems
                 </span>
             </a>
-            
+
 
             <br/>
 
-            <img src="sources/job.png"/>
-            <span class="job-place">Software Engineer Intern</span> 
-            <img src="sources/calendar.png"/>
+            <img src="sources/job.png" alt=""/>
+            <span class="job-place">Software Engineer Intern</span>
+            <img src="sources/calendar.png" alt=""/>
             <p class="date">May 2022 - August 2022</p>
 
-            <br/>        
+            <br/>
             <hr class="divider"/>
-            
+
             <div class="roles">
               <p>∘ Work closely with an Agile team of Software Engineers via SCRUM rituals.</p>
               <p>∘ Use ASP.NET to develop a Restful API for Sunquest's <a href="https://www.sunquestinfo.com/software-and-services/vue/">VUE</a> web application.</p>
               <p>∘ Develop an HL7 message scraper that sorts invalid ICD/CPT billing codes.</p>
               <p>∘ Create backend automation tests for testing in C# and .NET Frameworks.</p>
-              <p style="display: inline-block;"> ∘ Tools:             
+              <p style="display: inline-block;"> ∘ Tools:
                 <p class="tools">C#</p>
                 <p class="tools">TypeScript</p>
                 <p class="tools">AngularJS</p>
@@ -239,7 +242,7 @@
             </div>
         </li>
         <li>
-          <img class="company-pic" src="sources/osucoe-horizontal.png"/><br/>
+          <img class="company-pic" src="sources/osucoe-horizontal.png" alt="Ohio State College of Engineering"/><br/>
           <a class="job-title" href="https://engineering.osu.edu">
               <span style="letter-spacing: 1px; color: #9595ca;">
                   Ohio State College of Engineering
@@ -248,38 +251,38 @@
 
           <br/>
 
-          <img src="sources/job.png"/>
-          <span class="job-place">Undergraduate Teaching Assistant</span> 
-          <img src="sources/calendar.png"/>
+          <img src="sources/job.png" alt=""/>
+          <span class="job-place">Undergraduate Teaching Assistant</span>
+          <img src="sources/calendar.png" alt=""/>
           <p class="date">August 2021 - Present</p>
 
-          <br/>        
+          <br/>
           <hr class="divider"/>
-          
+
           <div class="roles">
               <p>∘ UTA for CSE 1223: <a target="_blank" href="https://coe-portal.cse.ohio-state.edu/pdf-exports/CSE/CSE-1223.pdf"><i>Introduction to Computer Programming in Java</i></a>.</p>
               <p>∘ Attend all class labs and host 2-3 hours of weekly office hours. </p>
               <p>∘ Analyze Java codes to debug and provide guidance on how to proceed.</p>
               <p>∘ Grade weekly project assignments, provide feedback, and share useful tips.</p>
-              <p style="display: inline-block;"> ∘ Tools:             
+              <p style="display: inline-block;"> ∘ Tools:
                 <p class="tools">Java</p>
               </p>
           </div>
         </li>
         <li>
-          <img class="company-pic" src="sources/robintek.png"/><br/>
+          <img class="company-pic" src="sources/robintek.png" alt="Robintek"/><br/>
             <a class="job-title" href="https://www.robintek.com">
                 <span style="letter-spacing: 1px; color: #9595ca;">
                     Robin Technologies
                 </span>
-            </a>  
+            </a>
 
             <br/>
 
-            <img src="sources/job.png"/> 
+            <img src="sources/job.png" alt=""/>
             <span class="job-place">Frontend Developer Intern</span>
-            <img src="sources/calendar.png"/>
-            <p class="date">May 2020 - August 2020</p> 
+            <img src="sources/calendar.png" alt=""/>
+            <p class="date">May 2020 - August 2020</p>
             <br/>
             <hr class="divider"/>
 
@@ -288,7 +291,7 @@
                 <p>∘ Used HTML/CSS to develop custom websites based on client specifications. </p>
                 <p>∘ Analyzed and debugged errors in the codebase to produce efficient code. </p>
                 <p>∘ Learned and practiced real-life application of web development processes.</p>
-                <p style="display: inline-block;"> ∘ Tools:             
+                <p style="display: inline-block;"> ∘ Tools:
                   <p class="tools">HTML</p>
                   <p class="tools">CSS</p>
                   <p class="tools">JavaScript</p>
@@ -296,116 +299,116 @@
                 </p>
             </div>
         </li>
-        
 
-      
+
+
       </ul>
 </div>
 <br/>
-<div class="skill-body" id="skill-sec">
+<div class="skill-body">
+    <h3 class="title" id="skill-sec" style="margin-top:-40px;margin-bottom:20px; margin-left: -10px;">🧠 Skills 🧠</h3>
     <ul>
-      <h3 class="title" style="margin-top:-40px;margin-bottom:20px; margin-left: -10px;">🧠 Skills 🧠</h3>
       <li class="roles">
           <div class="skill-cont">
                 <div>
                   <ul class="langs">
                     <li>
-                      <img style="filter: invert(84%);" src="sources/java.gif"/><br/>
+                      <img style="filter: invert(84%);" src="sources/java.gif" alt="Java" /><br/>
                       <p>Java</p>
                       <p><progress value="75" max="100"></progress></p>
                   </li>
                     <li>
-                      <img src="sources/python.png"/><br/>
+                      <img src="sources/python.png" alt="Python" /><br/>
                       <p>Python</p>
                       <p><progress value="60" max="100"></progress></p>
-  
+
                     </li>
                     <li>
-                      <img src="sources/swift.png"/><br/>
+                      <img src="sources/swift.png" alt="Swift" /><br/>
                       <p>Swift</p>
                       <p><progress value="50" max="100"></progress></p>
                     </li>
                     <li>
-                      <img src="sources/csharp.png"/><br/>
+                      <img src="sources/csharp.png" alt="C#" /><br/>
                       <p>C#</p>
                       <p><progress value="47" max="100"></progress></p>
                     </li>
                     <li>
-                      <img src="sources/ruby.png"/><br/>
+                      <img src="sources/ruby.png" alt="Ruby"/><br/>
                       <p>Ruby</p>
                       <p><progress value="40" max="100"></progress></p>
                     </li>
-                    
-                    
+
+
                   </ul>
                 </div>
                 <br/>
             <div>
               <ul class="langs">
                 <li>
-                  <img src="sources/js.png"/><br/>
+                  <img src="sources/js.png" alt="JS" /><br/>
                   <p>JavaScript</p>
                   <p><progress value="68" max="100"></progress></p>
                 </li>
                 <li>
-                  <img src="sources/html.gif"/><br/>
+                  <img src="sources/html.gif" alt="HTML"/><br/>
                     <p>HTML</p>
                     <p><progress value="50" max="100"></progress></p>
                 </li>
                 <li>
-                  <img src="sources/css.gif"/><br/>
+                  <img src="sources/css.gif" alt="CSS"/><br/>
                       <p>CSS</p>
                       <p><progress value="48" max="100"></progress></p>
                 </li>
                 <li>
-                  <img src="sources/django.png"/><br/>
+                  <img src="sources/django.png" alt="Django" /><br/>
                 <p>Django</p>
                 <p><progress value="38" max="100"></progress></p>
                 </li>
                 <li>
-                  <img src="sources/ajs.png"/><br/>
+                  <img src="sources/ajs.png" alt="AngularJS" /><br/>
                   <p>AngularJS</p>
                   <p><progress value="28" max="100"></progress></p>
                 </li>
                 <li>
-                  <img src="sources/bootstrap.gif"/><br/>
+                  <img src="sources/bootstrap.gif" alt="Bootstrap" /><br/>
                   <p>Bootstrap</p>
                   <p><progress value="25" max="100"></progress></p>
                 </li>
                 <li>
-                  <img src="sources/rails.png"/><br/>
+                  <img src="sources/rails.png" alt="Rails/" ><br/>
                   <p>Rails</p>
                   <p><progress value="20" max="100"></progress></p>
                 </li>
               </ul>
-              
+
             </div>
           </div>
-          
-        </div>  
+
+        </div>
       </li>
     </ul>
 </div>
 
 <div style="margin-left: -3vw; margin-bottom: 20px;" class="skill-body" id="course-sec">
-  <ul>
     <h3 class="title" style="margin-left: 0px;margin-bottom: 20px; margin-top:-30px">🎓 Education 🎓</h3>
-    
+  <ul>
+
     <li class="roles" style="text-align: left;">
           <a class="job-title" href="https://www.osu.edu/">
               <span style="letter-spacing: 2px; font-size: 13px;color: #9595ca;">
                   The Ohio State University
               </span>
           </a>
-  
-          
-          
-          <br/>        
+
+
+
+          <br/>
           <hr class="divider"/>
-  
+
           <div class="roles">
               <p>∘ Major: Computer Science and Engineering </p>
-              <p>∘ <a href="http://undergrad.osu.edu/cost-and-aid/merit-based-scholarships">Land Grant Scholarship</a> (Full Cost of Attendence)</p> 
+              <p>∘ <a href="http://undergrad.osu.edu/cost-and-aid/merit-based-scholarships">Land Grant Scholarship</a> (Full Cost of Attendence)</p>
             </p>
           </div>
       <div ng-repeat="courses in courseList">
@@ -422,7 +425,7 @@
 </div>
 
   <div style="text-align: center;">
-    <a onclick="func('begin-sec')"><img class="main-logo" src="sources/shin-jay.png"/></a>
+    <a href="#begin-sec"><img class="main-logo" src="sources/shin-jay.png" alt=""/></a>
   </div>
 <br>
 </body>
